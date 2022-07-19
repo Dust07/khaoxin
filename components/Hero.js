@@ -1,9 +1,9 @@
+import heroStyles from "../styles/Hero.module.scss"
 
 function Hero() {
   return (
-    <section className="section-hero">
+    <section className={heroStyles.sectionHero}>
       <div className="container">
-        <p>Hero Page</p>
       </div>
     </section>
   )
