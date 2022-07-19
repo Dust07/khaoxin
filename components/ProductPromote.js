@@ -2,7 +2,9 @@ import Image from 'next/image'
 import productStyles from "../styles/ProductPromote.module.scss"
 import blueDrink from "../public/assets/blue-drink.png"
 import blueDrinkCover from "../public/assets/blue-drink-cover.jpg"
-import PromoteItem from './smallersComponents/PromoteItem'
+import PromoteItemLeft from './smallersComponents/PromoteItemLeft'
+import PromoteItemRight from './smallersComponents/PromoteItemRight'
+
 
 function ProductPromote() {
   const productPromote = [
@@ -14,10 +16,9 @@ function ProductPromote() {
   ]
   return (
     <section className={productStyles.sectionProductPromote}>
-      <PromoteItem item={productPromote[0]}></PromoteItem>
-      <PromoteItem item={productPromote[0]}></PromoteItem>
-      <PromoteItem item={productPromote[0]}></PromoteItem>
-
+      <PromoteItemLeft item={productPromote[0]}></PromoteItemLeft>
+      <PromoteItemRight item={productPromote[0]}></PromoteItemRight>
+      <PromoteItemLeft item={productPromote[0]}></PromoteItemLeft>
     </section>
   )
 }

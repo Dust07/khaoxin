@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import ProductPromote from '../components/ProductPromote'
+import Promotion from '../components/Promotion'
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
@@ -19,6 +19,7 @@ export default function Home() {
 
       <Hero></Hero>
       <ProductPromote></ProductPromote>
+      <Promotion></Promotion>
 
       <Footer></Footer>
     </div>
