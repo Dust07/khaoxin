@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Footer from '../components/Footer'
+import Gallery from '../components/Gallery'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import ProductPromote from '../components/ProductPromote'
@@ -21,6 +22,7 @@ export default function Home() {
       <ProductPromote></ProductPromote>
       <Promotion></Promotion>
 
+      <Gallery></Gallery>
       <Footer></Footer>
     </div>
 
