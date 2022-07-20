@@ -1,50 +1,22 @@
 .promotionWrapper {
   width: 100%;
-  background-color: #dce1e1;
-}
-
-.promotionText {
+  background-color: #dddddd;
   position: relative;
-  padding: 100px 0;
-  text-align: end;
-  p {
-    font-size: 100px;
-    font-weight: 500;
-    margin: 0;
-  }
-  em {
-    font-size: 250px;
-    font-weight: 700;
-  }
 }
-.promotionText::before {
-  content: "";
+.buttonWrapper {
   position: absolute;
-  width: 400px;
-  height: 400px;
-  border-radius: 100%;
-  background-color: #7abddf;
-  top: 20%;
-  left: 10%;
-}
-.textWrapper {
-  position: relative;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
   z-index: 1;
 }
-.textEmphasis {
-  font-size: 200px;
-  font-weight: 700;
-}
+
 .CTA {
-  padding: 24px 36px;
-  margin-top: 24px;
-  background: #7abddf;
-  border: none;
-  font-size: 80px;
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 6px;
+  background-color: #05b2f0;
+  font-size: 48px;
   font-weight: 500;
-}
-.promotionRightSideImage {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }

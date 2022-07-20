@@ -1,8 +1,12 @@
 .sectionHeader {
   width: 100%;
-  height: 4000px;
 }
 
+.navbarBackground {
+  height: 100px;
+  background: rgb(42, 42, 42);
+  background: linear-gradient(180deg, rgba(42, 42, 42, 0.3393732492997199) 0%, rgba(255, 255, 255, 0) 100%);
+}
 .brandLogo {
   position: absolute;
   left: 50%;

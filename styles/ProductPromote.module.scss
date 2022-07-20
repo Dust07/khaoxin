@@ -1,78 +1,80 @@
+.sectionProductPromote {
+  padding-top: 100px;
+}
+
 .productWrapper {
-  padding: 100px 0;
-}
-.productContent {
   position: relative;
-  width: 95%;
-  z-index: 1;
+  padding: 24px 0;
+  margin: 200px 0;
 }
-.productHighlight {
-  position: absolute;
-  background: #7abddf;
-  bottom: 0;
-  width: 100%;
-  height: 120px;
-}
-
-.productHighlightWhiteSpace {
-  position: absolute;
-  background: #ffffff;
-  bottom: -1px;
-  width: 80%;
-  height: 152px;
-  z-index: 1;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+.productTitle {
   text-align: center;
 }
-.productImagesWrapper {
-  position: relative;
-  text-align: center;
-  margin-bottom: 30px;
-}
-// .sideText {
-//   position: absolute;
-//   display: flex;
-//   align-items: center;
-//   gap: 8px;
-//   top: 50%;
-//   transform: translate(-50%, -50%);
-//   transform: rotate(90deg);
-//   p {
-//     margin: 0;
-//     font-size: 36px;
-//     font-weight: 500;
-//   }
-// }
-// .sideLine {
-//   width: 600px;
-//   height: 2px;
-//   background: #111111;
-// }
-.productHighlightSideImage {
-  position: absolute;
-  right: 0;
-  bottom: -50px;
-}
-
-.productTextWrapper {
-  position: relative;
-  p {
-    font-size: 24px;
-    font-weight: 300;
-  }
-}
-
-//RIGHT SIDE
-.rightSide {
+.productContentContainer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
-.productHighlightSideImageRightSide {
+//HIGHLIGHT BANNER UNDER PRODUCT SECTIOn
+//LEFT SIDE CSS
+.coloredHighlight {
   position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 60%;
+}
+.coloredHighlightShort {
+  width: 20px;
+  right: 0;
+}
+
+//RIGHT SIDE CSS
+.coloredHighlightRight {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  width: 60%;
+}
+.coloredHighlightShortRight {
+  width: 20px;
   left: 0;
-  bottom: -50px;
+}
+//PRODUCT IMAGE SECTION
+
+.productImagesContainer {
+  display: flex;
+}
+.verticalText {
+  writing-mode: vertical-rl;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 54px;
+  text-transform: uppercase;
+}
+
+.productDisplay {
+  padding: 0 24px;
+  align-self: flex-end;
+}
+
+.textContainer {
+  width: 50%;
+  position: relative;
+}
+.productName {
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 500;
+}
+.shadowText {
+  position: absolute;
+  font-size: 36px;
+  font-weight: 500;
+  opacity: 0.3;
+  transform: translate(-50px, -30px);
+}
+.productDesc {
+  font-size: 24px;
+  font-weight: 300;
 }

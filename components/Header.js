@@ -1,11 +1,11 @@
 import Image from 'next/image'
-import khaoxinLogo from "../public/assets/mock-logo.png"
+import khaoxinLogo from "../public/assets/logo-small.svg"
 import headerStyles from "../styles/Header.module.scss"
 import { socialList } from "../database/icon"
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light fixed-top bg-transparent pt-3 ">
+    <nav className={`navbar navbar-expand-lg navbar-light fixed-top pt-3 ${headerStyles.navbarBackground}`}>
       <div className="container-fluid">
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -24,11 +24,11 @@ function Header() {
           </ul>
         </div>
         <div className={headerStyles.brandLogo}>
-          <Image width={50} height={50} src={khaoxinLogo} alt="khaoxin-logo" />
+          <Image width={80} height={80} src={khaoxinLogo} alt="khaoxin-logo" />
         </div>
         <div className={headerStyles.socialWrapper}>
           {socialList.map((socialLogo, index) => {
-            return <Image key={index} width={20} height={20} src={socialLogo.image} alt={`${socialLogo.name}-logo`} />
+            return <Image key={index} width={30} height={30} src={socialLogo.image} alt={`${socialLogo.name}-logo`} />
           })}
         </div>
       </div>

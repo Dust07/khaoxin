@@ -1,30 +1,31 @@
+import { useEffect } from 'react';
 import ImageGallery from 'react-image-gallery';
 import galleryStyles from "../styles/Gallery.module.scss"
 
-const images = [
-  {
-    original: 'https://picsum.photos/id/1018/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1018/250/150/',
-  },
-  {
-    original: 'https://picsum.photos/id/1015/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1015/250/150/',
-  },
-  {
-    original: 'https://picsum.photos/id/1019/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1019/250/150/',
-  },
-];
-function Gallery() {
-
-
+function Gallery({ images }) {
+  const imageList = images.map((image) => {
+    return {
+      original: image.download_url,
+      thumbnail: image.download_url,
+      originalHeight: 500,
+      originalWidth: 400,
+      thumbnailHeight: 70,
+      thumbnailWidth: 100,
+    }
+  })
   return (
-    <section>
-      <div className="container">
-        <ImageGallery items={images} />
-      </div>
+    <section className={galleryStyles.galleryWrapper}>
+      <h2 className={galleryStyles.galleryTitle}>THƯ VIỆN</h2>
+
+      <ImageGallery
+        items={imageList}
+        showFullscreenButton={false}
+        showPlayButton={false}
+        lazyLoad={true}
+      />
     </section>
   )
 }
+
 
 export default Gallery

@@ -1,24 +1,19 @@
-import Image from 'next/image'
 import productStyles from "../styles/ProductPromote.module.scss"
-import blueDrink from "../public/assets/blue-drink.png"
-import blueDrinkCover from "../public/assets/blue-drink-cover.jpg"
 import PromoteItemLeft from './smallersComponents/PromoteItemLeft'
-import PromoteItemRight from './smallersComponents/PromoteItemRight'
-
+import PromoteItemRight from "./smallersComponents/PromoteItemRight"
+import { productPromote } from "../database/promoteProduct"
 
 function ProductPromote() {
-  const productPromote = [
-    {
-      name: "Blue Drink",
-      productImage: blueDrink,
-      productCoverImage: blueDrinkCover,
-    }
-  ]
+
   return (
     <section className={productStyles.sectionProductPromote}>
-      <PromoteItemLeft item={productPromote[0]}></PromoteItemLeft>
-      <PromoteItemRight item={productPromote[0]}></PromoteItemRight>
-      <PromoteItemLeft item={productPromote[0]}></PromoteItemLeft>
+      <div className={productStyles.productTitle}>
+        <h2>OUR SIGNATURES</h2>
+      </div>
+      {productPromote.map((product, index) => {
+        if (index === 1) return <PromoteItemRight key={index} item={product}></PromoteItemRight>
+        return <PromoteItemLeft key={index} item={product}></PromoteItemLeft>
+      })}
     </section>
   )
 }
