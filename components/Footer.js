@@ -1,6 +1,4 @@
-import Image from "next/image"
 import footerStyles from "../styles/Footer.module.scss"
-import khaoxinLogo from "../public/assets/mock-logo.png"
 
 
 function Footer() {

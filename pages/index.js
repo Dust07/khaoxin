@@ -8,6 +8,7 @@ import Hero from '../components/Hero'
 import ProductPromote from '../components/ProductPromote'
 import Promotion from '../components/Promotion'
 import styles from '../styles/Home.module.scss'
+import PromotionCarousel from '../components/PromotionCarousel';
 
 export default function Home({ images }) {
 
@@ -17,13 +18,16 @@ export default function Home({ images }) {
         <title>Khaoxin</title>
         <meta name="description" content="Khaoxin bubble tea" />
         <link rel="icon" href="/favicon.ico" />
-
       </Head>
 
       <Header></Header>
 
-      <Hero></Hero>
+      {/* <Hero></Hero> */}
+
+      <PromotionCarousel></PromotionCarousel>
+
       <ProductPromote></ProductPromote>
+
       <Promotion></Promotion>
 
       <Gallery images={images}></Gallery>

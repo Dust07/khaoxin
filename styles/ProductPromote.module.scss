@@ -5,7 +5,15 @@
 .productWrapper {
   position: relative;
   padding: 24px 0;
-  margin: 200px 0;
+  margin: 100px 0;
+}
+.animationLTR {
+  transform: translateX(100vw);
+  animation: left-to-right 1s ease-out forwards;
+}
+.animationRTL {
+  transform: translateX(-100vw);
+  animation: right-to-left 1s ease-out forwards;
 }
 .productTitle {
   text-align: center;
@@ -77,4 +85,43 @@
 .productDesc {
   font-size: 24px;
   font-weight: 300;
+}
+
+//Category section
+.productCategory {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.categoryOption {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 200px;
+  height: 200px;
+}
+
+.selected {
+  background-color: red;
+}
+
+//Animation
+@keyframes left-to-right {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes right-to-left {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
 }

@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import ImageGallery from 'react-image-gallery';
 import galleryStyles from "../styles/Gallery.module.scss"
 
