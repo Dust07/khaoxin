@@ -1,0 +1,73 @@
+@import "../../styles/variables.scss";
+
+.sectionWrapper {
+  display: flex;
+}
+
+//GRID SELECTION
+.gridWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 124px;
+}
+
+//item
+.gridItemWrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gridItemWrapper::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 120px;
+  background: $grid-background-border;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  z-index: -1;
+}
+.gridItemWrapper::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background: $grid-background-border;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  z-index: -1;
+}
+.gridItem {
+  position: absolute;
+  width: 50px;
+  height: 80px;
+  transition: 0.5s;
+}
+.gridItem:hover {
+  transform: scale(1.5) rotate(20deg);
+  transition: 0.5s;
+}
+.gridItemBackground {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  filter: blur(16px);
+  border-radius: 100%;
+}
+
+//ITEM DISPLAY
+.itemDisplayWrapper {
+  flex-grow: 1;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

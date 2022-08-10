@@ -9,6 +9,7 @@ import ProductPromote from '../components/ProductPromote'
 import Promotion from '../components/Promotion'
 import styles from '../styles/Home.module.scss'
 import PromotionCarousel from '../components/PromotionCarousel';
+import GridProduct from '../components/grid-product/gridProduct';
 
 export default function Home({ images }) {
 
@@ -20,18 +21,18 @@ export default function Home({ images }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header></Header>
+      <Header />
 
-      {/* <Hero></Hero> */}
+      {/* <Hero/> */}
 
-      <PromotionCarousel></PromotionCarousel>
+      <PromotionCarousel />
 
-      <ProductPromote></ProductPromote>
+      <GridProduct />
+      {/* <ProductPromote /> */}
+      <Promotion />
 
-      <Promotion></Promotion>
-
-      <Gallery images={images}></Gallery>
-      <Footer></Footer>
+      <Gallery images={images} />
+      <Footer />
     </div>
 
   )
