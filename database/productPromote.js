@@ -47,7 +47,7 @@ export const productPromote = [
   },
   {
     id: 3,
-    name: "Blue Drink",
+    name: "Blue Drink 2",
     shadowText: "Freshen your day with a cup of",
     image: blueDrink,
     coverImage: blueDrinkCover,
@@ -60,7 +60,7 @@ export const productPromote = [
   },
   {
     id: 4,
-    name: "Yellow Drink",
+    name: "Yellow Drink 2",
     shadowText: "Màu vàng khiến chàng xỉu ngang",
     image: yellowDrink,
     coverImage: yellowDrinkCover,
@@ -73,7 +73,7 @@ export const productPromote = [
   },
   {
     id: 5,
-    name: "Purple Drink",
+    name: "Purple Drink 2",
     shadowText: "Giải khát đã mát, uống phát là fat",
     image: purpleDrink,
     coverImage: purpleDrinkCover,
@@ -86,7 +86,7 @@ export const productPromote = [
   },
   {
     id: 6,
-    name: "Blue Drink",
+    name: "Blue Drink 3",
     shadowText: "Freshen your day with a cup of",
     image: blueDrink,
     coverImage: blueDrinkCover,
@@ -99,7 +99,7 @@ export const productPromote = [
   },
   {
     id: 7,
-    name: "Yellow Drink",
+    name: "Yellow Drink 3",
     shadowText: "Màu vàng khiến chàng xỉu ngang",
     image: yellowDrink,
     coverImage: yellowDrinkCover,
@@ -112,7 +112,7 @@ export const productPromote = [
   },
   {
     id: 8,
-    name: "Purple Drink",
+    name: "Purple Drink 3",
     shadowText: "Giải khát đã mát, uống phát là fat",
     image: purpleDrink,
     coverImage: purpleDrinkCover,
