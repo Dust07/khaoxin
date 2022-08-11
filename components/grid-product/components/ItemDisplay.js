@@ -1,14 +1,18 @@
 import Image from "next/image"
 import gridStyles from "../GridProduct.module.scss"
+import LeftToRightFade from "../../animatedComponent/LeftToRightFade"
+import { motion, AnimatePresence } from "framer-motion"
 
 
 function ItemDisplay({ item }) {
   return (
-    <div key={item.name} className={gridStyles.itemDisplayWrapper} >
+    <div className={gridStyles.itemDisplayWrapper}>
       <div className={gridStyles.itemContainer}>
-        <div className={gridStyles.itemImage}>
-          <div className={gridStyles.displayItemBackground} style={{ background: item.color }} ></div>
-          <Image className={gridStyles.image} width={200} height={300} src={item.image} alt={item.name} />
+        <div className={gridStyles.itemImageWrapper}>
+          <LeftToRightFade name={item.name} className={gridStyles.itemImage}>
+            <div className={gridStyles.displayItemBackground} style={{ background: item.color }} ></div>
+            <Image className={gridStyles.image} width={200} height={300} src={item.image} alt={item.name} />
+          </LeftToRightFade>
         </div>
         <div className={gridStyles.itemText}>
           <div className={gridStyles.itemTitle}>
@@ -18,7 +22,7 @@ function ItemDisplay({ item }) {
           <p>{item.desc}</p>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

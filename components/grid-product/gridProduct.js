@@ -13,7 +13,7 @@ function GridProduct() {
   return (
     <section>
       <div className={gridStyles.sectionTitle}>
-        <h2>BRING YOU THE BEST DRINK OF THE CENTURY</h2>
+        <h2>PLACEHOLDER TITLE</h2>
       </div>
       <div className={`container ${gridStyles.gridSectionWrapper}`} >
         <GridSelector productPromote={productPromote} handleSelectDrink={handleSelectDrink} />
