@@ -11,9 +11,9 @@ function GridProduct() {
     setSelected(e.target.id);
   }
   return (
-    <section>
+    <section className={gridStyles.gridProduct}>
       <div className={`container ${gridStyles.sectionTitle}`}>
-        <h2 className={gridStyles.titleText}>PLACEHOLDER TITLE</h2>
+        <h2 className={gridStyles.h2Text}>PLACEHOLDER TITLE</h2>
         <p className={gridStyles.descText}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequatur fuga hic. Minima repellat, ex velit fuga, ducimus nesciunt alias, sed numquam error rerum sapiente voluptatum repellendus quos doloremque exercitationem.</p>
       </div>
       <div className={`container ${gridStyles.gridSectionWrapper}`} >

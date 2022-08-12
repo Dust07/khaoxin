@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+.orderMethod {
+  display: flex;
+}
+
+//TEXT SECTION
+.textSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  .textContainer {
+    h2 {
+      text-align: center;
+    }
+  }
+}
+.webOrderBtn {
+  width: 300px;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  background-color: #000000;
+}
+
+//THIRD PARTY SECTION

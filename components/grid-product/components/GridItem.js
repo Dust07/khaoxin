@@ -1,5 +1,5 @@
 import Image from "next/image"
-import HoverClick from "../../animatedComponent/HoverClick"
+import HoverClick from "../../animated_component/HoverClick"
 import gridStyles from "../GridProduct.module.scss"
 
 

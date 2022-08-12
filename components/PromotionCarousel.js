@@ -15,13 +15,13 @@ function PromotionCarousel() {
           showThumbs={false}
         >
           <div>
-            <Image src={promotion} height="800px" alt="promotion1" />
+            <Image src={promotion} height={600} alt="promotion1" />
           </div>
           <div>
-            <Image src={promotion} height="800px" alt="promotion2" />
+            <Image src={promotion} height={600} alt="promotion2" />
           </div>
           <div>
-            <Image src={promotion} height="800px" alt="promotion3" />
+            <Image src={promotion} height={600} alt="promotion3" />
           </div>
         </Carousel>
       </div>

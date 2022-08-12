@@ -2,9 +2,15 @@ $header-height: 72px;
 
 $grid-background-border: rgb(0, 0, 0);
 
-.titleText {
+.h2Text {
   font-weight: 500;
   font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.h3Text {
+  font-weight: 500;
+  font-size: 36px;
   margin-bottom: 12px;
 }
 .descText {
