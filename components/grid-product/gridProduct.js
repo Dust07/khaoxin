@@ -12,8 +12,9 @@ function GridProduct() {
   }
   return (
     <section>
-      <div className={gridStyles.sectionTitle}>
-        <h2>PLACEHOLDER TITLE</h2>
+      <div className={`container ${gridStyles.sectionTitle}`}>
+        <h2 className={gridStyles.titleText}>PLACEHOLDER TITLE</h2>
+        <p className={gridStyles.descText}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequatur fuga hic. Minima repellat, ex velit fuga, ducimus nesciunt alias, sed numquam error rerum sapiente voluptatum repellendus quos doloremque exercitationem.</p>
       </div>
       <div className={`container ${gridStyles.gridSectionWrapper}`} >
         <GridSelector productPromote={productPromote} handleSelectDrink={handleSelectDrink} />
