@@ -1,15 +1,13 @@
 import Head from 'next/head'
-import axios from 'axios';
 
-import Footer from '../components/Footer'
-import Gallery from '../components/Gallery'
-import Header from '../components/Header'
-import Hero from '../components/Hero'
-import ProductPromote from '../components/ProductPromote'
-import Promotion from '../components/Promotion'
+import Footer from '../components/layout/footer/Footer'
+import Gallery from '../components/gallery/Gallery'
+import Header from '../components/layout/header/Header'
 import styles from '../styles/Home.module.scss'
-import PromotionCarousel from '../components/PromotionCarousel';
-import GridProduct from '../components/grid-product/gridProduct';
+import PromotionCarousel from '../components/promotion_carousel/PromotionCarousel';
+import GridProduct from '../components/grid_product/gridProduct';
+import Benefit from '../components/benefit/Benefit'
+import OrderMethod from '../components/order_method/OrderMethod'
 
 export default function Home({ images }) {
 
@@ -17,20 +15,15 @@ export default function Home({ images }) {
     <div className={styles.webBackground}>
       <Head>
         <title>Khaoxin</title>
-        <meta name="description" content="Khaoxin bubble tea" />
+        <meta name="description" content="Trà sữa Khaoxin" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
-
-      {/* <Hero/> */}
-
       <PromotionCarousel />
-
+      <Benefit />
       <GridProduct />
-      {/* <ProductPromote /> */}
-      <Promotion />
-
+      <OrderMethod />
       <Gallery images={images} />
       <Footer />
     </div>

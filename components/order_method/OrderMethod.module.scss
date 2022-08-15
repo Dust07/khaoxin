@@ -1,0 +1,45 @@
+@import "../../styles/variables.scss";
+
+.orderMethod {
+  display: flex;
+}
+
+//TEXT SECTION
+.textSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  .textContainer {
+    h2 {
+      text-align: center;
+    }
+  }
+}
+.webOrderBtn {
+  width: 300px;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  background-color: #000000;
+}
+
+//THIRD PARTY SECTION
+.thirdPartyWrapper {
+  padding: 100px 0 50px 0;
+}
+.thirdParty {
+  h3 {
+    text-align: center;
+  }
+}
+.thirdPartyList {
+  display: flex;
+  padding-top: 50px;
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+}

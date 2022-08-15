@@ -1,10 +1,10 @@
-@import "./variables.scss";
+@import "../../styles/variables.scss";
 
 .sectionHero {
   margin-top: $header-height;
   width: 100%;
   height: calc(100vh - $header-height);
-  background-image: url("../public/assets/mock-bg.jpg");
+  background-image: url("../../public/assets/mock-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100vw calc(100vh - $header-height);

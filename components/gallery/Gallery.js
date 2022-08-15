@@ -1,5 +1,5 @@
 import ImageGallery from 'react-image-gallery';
-import galleryStyles from "../styles/Gallery.module.scss"
+import galleryStyles from "./Gallery.module.scss"
 
 function Gallery({ images }) {
   const imageList = images.map((image) => {

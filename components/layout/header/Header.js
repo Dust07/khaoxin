@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import khaoxinLogoText from "../public/assets/logo.svg"
-import khaoxinLogo from "../public/assets/logo-icon.svg"
-import headerStyles from "../styles/Header.module.scss"
-import { socialList } from "../database/icon"
 import { useEffect, useState } from 'react';
+import khaoxinLogoText from "../../../public/assets/logo.svg"
+import khaoxinLogo from "../../../public/assets/logo-icon.svg"
+import headerStyles from "./Header.module.scss"
+import { socialList } from "../../../database/icon"
 
 function Header() {
   const [clientWindowHeight, setClientWindowHeight] = useState("");
