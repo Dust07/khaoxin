@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import PromoteItemLeft from './smallersComponents/PromoteItemLeft'
 import PromoteItemRight from "./smallersComponents/PromoteItemRight"
-import { productCategory } from "../database/productCategory"
-import productStyles from "../styles/ProductPromote.module.scss"
+import { productCategory } from "../../database/productCategory"
+import productStyles from "./ProductPromote.module.scss"
 import Image from 'next/image';
 
 function ProductPromote() {

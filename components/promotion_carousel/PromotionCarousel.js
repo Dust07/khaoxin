@@ -1,8 +1,8 @@
-import carouselStyles from "../styles/Carousel.module.scss"
+import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import promotion from "../public/assets/mock-promotion.jpg"
-import Image from "next/image";
+import promotion from "../../public/assets/mock-promotion.jpg"
+import carouselStyles from "./Carousel.module.scss"
 
 function PromotionCarousel() {
   return (
