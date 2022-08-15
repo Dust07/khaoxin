@@ -4,7 +4,7 @@ import webOrder from "../../public/assets/weborder-black.svg"
 import greenTick from "../../public/assets/green-tick.svg"
 import menuHeroAsset from "../../public/assets/menu-hero-asset.png"
 import WebOrderBtn from "../reusable/btn/WebOrderBtn"
-import ThirdParty from "../reusable/btn/third_party/ThirdParty"
+import ThirdParty from "../reusable/third_party/ThirdParty"
 
 function MenuHero() {
   return (

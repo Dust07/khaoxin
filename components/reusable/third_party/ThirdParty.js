@@ -1,6 +1,6 @@
 import Image from "next/image"
 import thirdParty from "../third_party/ThirdParty.module.scss"
-import { thirdPartyList } from "../../../../database/thirdParty"
+import { thirdPartyList } from "../../../database/thirdParty"
 
 function ThirdParty({ itemWidth }) {
   return (

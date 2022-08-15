@@ -1,7 +1,7 @@
 import Image from "next/image"
 import orderStyles from "./OrderMethod.module.scss"
 import delivery from "../../public/assets/delivery.svg"
-import ThirdParty from "../reusable/btn/third_party/ThirdParty"
+import ThirdParty from "../reusable/third_party/ThirdParty"
 import WebOrderBtn from "../reusable/btn/WebOrderBtn"
 
 function OrderMethod() {
