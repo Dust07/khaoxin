@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
-import menuStyles from "./MenuDisplay.module.scss"
 import { categoryList } from "../../database/category"
 import { productList } from "../../database/product"
+import menuStyles from "./MenuDisplay.module.scss"
 import CategoryBtn from "../reusable/btn/categoryBtn"
 import Item from "../reusable/item/Item"
 import BotToTopFade from "../animated_component/BotToTopFade"
