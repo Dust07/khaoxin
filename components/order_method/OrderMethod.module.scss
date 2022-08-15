@@ -16,30 +16,11 @@
     }
   }
 }
-.webOrderBtn {
-  width: 300px;
-  border: none;
-  border-radius: 12px;
-  padding: 12px 24px;
-  background-color: #000000;
-}
 
-//THIRD PARTY SECTION
+//THIRD PARTY
 .thirdPartyWrapper {
   padding: 100px 0 50px 0;
-}
-.thirdParty {
-  h3 {
+  p {
     text-align: center;
-  }
-}
-.thirdPartyList {
-  display: flex;
-  padding-top: 50px;
-  li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
   }
 }

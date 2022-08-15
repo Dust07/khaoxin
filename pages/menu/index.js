@@ -1,16 +1,16 @@
 import Header from "../../components/layout/header/Header"
-import Hero from "../../components/hero/Hero"
 import Footer from "../../components/layout/footer/Footer"
+import MenuHero from "../../components/menu_hero/MenuHero"
 
-function AboutUs() {
+function Menu() {
   return (
     <>
       <Header />
-      <Hero />
+      <MenuHero />
       <Footer />
     </>
 
   )
 }
 
-export default AboutUs
+export default Menu

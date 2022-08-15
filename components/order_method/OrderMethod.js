@@ -1,8 +1,8 @@
 import Image from "next/image"
 import orderStyles from "./OrderMethod.module.scss"
 import delivery from "../../public/assets/delivery.svg"
-import webOrder from "../../public/assets/weborder.svg"
-import ThirdParty from "./components/ThirdParty"
+import ThirdParty from "../reusable/btn/third_party/ThirdParty"
+import WebOrderBtn from "../reusable/btn/WebOrderBtn"
 
 function OrderMethod() {
   return (
@@ -19,14 +19,15 @@ function OrderMethod() {
               <p className={orderStyles.descText}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloremque repellat amet eveniet nobis! Accusamus autem cupiditate alias. Tempore numquam natus sapiente quos aut! Rerum cupiditate earum officiis recusandae qui.</p>
             </div>
 
-            <button className={orderStyles.webOrderBtn}>
-              <Image src={webOrder} alt="web-order-btn" />
-            </button>
+            <WebOrderBtn />
           </div>
         </div>
       </div>
 
-      <ThirdParty />
+      <div className={orderStyles.thirdPartyWrapper}>
+        <p>Khaoxin đã có mặt trên các ứng dụng</p>
+        <ThirdParty itemWidth={300} />
+      </div>
     </section >
   )
 }
