@@ -5,7 +5,6 @@ import gridStyles from "../GridProduct.module.scss"
 
 function GridItem({ item, index, handleSelectDrink }) {
   return (
-
     <li className={gridStyles.gridItemWrapper} >
       <div className={gridStyles.gridItemBackground} style={{ background: item.color }} ></div>
       <HoverClick>
@@ -14,7 +13,6 @@ function GridItem({ item, index, handleSelectDrink }) {
         </div>
       </HoverClick>
     </li>
-
   )
 }
 

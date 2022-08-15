@@ -1,8 +1,8 @@
 import btnStyles from "./Button.module.scss"
 
-function CategoryBtn({ text }) {
+function CategoryBtn({ text, categoryValue, handleSelectCategory, isSelected }) {
   return (
-    <button className={btnStyles.categoryBtn}>
+    <button className={`${isSelected ? btnStyles.categorySelected : ''} ${btnStyles.categoryBtn}`} value={categoryValue} onClick={handleSelectCategory}>
       <span>{text}</span>
     </button>
   )

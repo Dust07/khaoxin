@@ -11,6 +11,7 @@
 .gridSectionWrapper {
   display: flex;
   padding: 50px 0;
+  align-items: center;
 }
 
 //GRID SELECTION
@@ -19,6 +20,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
   padding: 24px;
+  height: 100%;
 }
 
 //item

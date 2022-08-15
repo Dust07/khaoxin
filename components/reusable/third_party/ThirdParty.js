@@ -1,10 +1,10 @@
 import Image from "next/image"
-import thirdParty from "../third_party/ThirdParty.module.scss"
+import thirdPartyStyles from "./ThirdParty.module.scss"
 import { thirdPartyList } from "../../../database/thirdParty"
 
 function ThirdParty({ itemWidth }) {
   return (
-    <ul className={thirdParty.thirdPartyList}>
+    <ul className={thirdPartyStyles.thirdPartyList}>
       {thirdPartyList.map(brand => {
         return (
           <li key={brand.id}>

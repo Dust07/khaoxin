@@ -10,7 +10,7 @@ function Header() {
 
   const handleScroll = () => {
     setClientWindowHeight(window.scrollY);
-    console.log(clientWindowHeight);
+    console.log(clientWindowHeight)
   };
 
   useEffect(() => {
