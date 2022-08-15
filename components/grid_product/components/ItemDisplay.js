@@ -1,8 +1,6 @@
 import Image from "next/image"
 import gridStyles from "../GridProduct.module.scss"
 import LeftToRightFade from "../../animated_component/LeftToRightFade"
-import { motion, AnimatePresence } from "framer-motion"
-
 
 function ItemDisplay({ item }) {
   return (

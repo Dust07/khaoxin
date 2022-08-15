@@ -8,7 +8,6 @@ body {
   font-family: "Roboto", sans-serif;
   max-width: 2000px;
   user-select: none;
-  overflow-x: hidden;
 }
 
 * {
@@ -31,6 +30,7 @@ h5 {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 h2 {
   font-size: 48px;

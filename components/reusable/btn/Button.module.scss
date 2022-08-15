@@ -1,0 +1,22 @@
+@import "../../../styles/variables.scss";
+
+//WEB ORDER BTN
+.webOrderBtn {
+  width: 300px;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  background-color: #000000;
+}
+
+//CATEGORY BTN
+.categoryBtn {
+  width: 200px;
+  border: none;
+  border-radius: 12px;
+  padding: 24px 0;
+}
+.categorySelected {
+  background-color: $light-blue;
+  transition: 0.5s;
+}
