@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+
+.mapWrapper {
+  margin-top: $header-height;
+  width: 100%;
+  height: 400px;
+}
+
+//Location Info
+.locationInfo {
+  position: absolute;
+  padding: 36px;
+  left: 100px;
+  width: 300px;
+  background-color: #ffffff;
+}
+.locationTitle {
+  font-size: 24px;
+}
+
+.closeButton {
+  position: absolute;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  right: 10px;
+  top: 10px;
+  z-index: 99;
+}
