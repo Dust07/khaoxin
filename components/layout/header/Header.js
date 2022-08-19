@@ -1,6 +1,6 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { useEffect, useState } from 'react';
-import khaoxinLogoText from "../../../public/assets/logo.svg"
 import khaoxinLogo from "../../../public/assets/logo-icon.svg"
 import headerStyles from "./Header.module.scss"
 import { socialList } from "../../../database/icon"
@@ -27,23 +27,31 @@ function Header() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">About us</a>
+              <Link href="about-us">
+                <a className="nav-link active" aria-current="page" >About us</a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Menu</a>
+              <Link href="/menu">
+                <a className="nav-link">Menu</a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Locations</a>
+              <Link href="#">
+                <a className="nav-link">Locations</a>
+              </Link>
             </li>
           </ul>
         </div>
         {/* <div className={headerStyles.brandLogo}>
           <Image width={70} height={70} src={khaoxinLogoText} alt="khaoxin-logo" />
         </div> */}
-        <div className={headerStyles.brandLogo}>
-          <Image width={50} height={50} src={khaoxinLogo} alt="khaoxin-logo" />
-          <span className={headerStyles.brandText}>Khaoxin</span>
-        </div>
+        <Link href="/">
+          <div className={headerStyles.brandLogo}>
+            <Image width={50} height={50} src={khaoxinLogo} alt="khaoxin-logo" />
+            <span className={headerStyles.brandText}>Khaoxin</span>
+          </div>
+        </Link>
         <div className={headerStyles.socialWrapper}>
           {socialList.map((socialLogo, index) => {
             return <Image key={index} width={20} height={20} src={socialLogo.image} alt={`${socialLogo.name}-logo`} />

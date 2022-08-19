@@ -1,5 +1,4 @@
 import Head from 'next/head'
-
 import Footer from '../components/layout/footer/Footer'
 import Gallery from '../components/gallery/Gallery'
 import Header from '../components/layout/header/Header'
@@ -8,6 +7,8 @@ import PromotionCarousel from '../components/promotion_carousel/PromotionCarouse
 import GridProduct from '../components/grid_product/gridProduct';
 import Benefit from '../components/benefit/Benefit'
 import OrderMethod from '../components/order_method/OrderMethod'
+import LocationMap from '../components/map/LocationMap'
+import { location } from "../database/location.js"
 
 export default function Home({ images }) {
 
@@ -17,6 +18,7 @@ export default function Home({ images }) {
         <title>Khaoxin</title>
         <meta name="description" content="Trà sữa Khaoxin" />
         <link rel="icon" href="/favicon.ico" />
+
       </Head>
 
       <Header />
@@ -24,6 +26,7 @@ export default function Home({ images }) {
       <Benefit />
       <GridProduct />
       <OrderMethod />
+      <LocationMap location={location} />
       <Gallery images={images} />
       <Footer />
     </div>
