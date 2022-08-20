@@ -14,7 +14,6 @@ function Item({ product }) {
         </div>
         <strong className={itemStyles.itemName}>{product.name}</strong>
       </div>
-
       <div>
         <PriceTag size="M" price={product.price.M} />
         <PriceTag size="L" price={product.price.L} />

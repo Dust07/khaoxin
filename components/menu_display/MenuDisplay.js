@@ -5,8 +5,14 @@ import menuStyles from "./MenuDisplay.module.scss"
 import CategoryBtn from "../reusable/btn/categoryBtn"
 import Item from "../reusable/item/Item"
 import BotToTopFade from "../animated_component/BotToTopFade"
+import { useInView } from "react-intersection-observer"
 
 function MenuDisplay() {
+  const { ref, inView, entry } = useInView({
+    threshold: 0.4,
+    triggerOnce: true
+  });
+
   const [selectedProducts, setSelectedProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(1);
 
@@ -48,8 +54,8 @@ function MenuDisplay() {
             </ul>
           </div>
 
-          <div className={menuStyles.item}>
-            {selectedProducts.map(product => {
+          <div className={menuStyles.item} ref={ref}>
+            {inView && selectedProducts.map(product => {
               return (
                 <BotToTopFade key={product.id} name={product.name} >
                   <Item product={product} />

@@ -4,7 +4,7 @@ import LeftToRightFade from "../../animated_component/LeftToRightFade"
 
 function ItemDisplay({ item }) {
   return (
-    <div className={gridStyles.itemDisplayWrapper}>
+    <div className={gridStyles.itemDisplayWrapper} >
       <div className={gridStyles.itemContainer}>
         <div className={gridStyles.itemImageWrapper}>
           <LeftToRightFade name={item.name} className={gridStyles.itemImage}>
@@ -21,6 +21,7 @@ function ItemDisplay({ item }) {
         </div>
       </div>
     </div >
+
   )
 }
 

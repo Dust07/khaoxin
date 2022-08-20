@@ -1,10 +1,18 @@
 $header-height: 72px;
+$footer-height: 100px;
 
 $grid-background-border: rgb(0, 0, 0);
 
 $light-blue: rgb(183, 227, 237);
 $light-gray: #f0f0f0;
 
+.h1Text {
+  font-weight: 500;
+  font-size: 48px;
+  margin-bottom: 12px;
+  text-align: center;
+  padding-top: 50px;
+}
 .h2Text {
   font-weight: 500;
   font-size: 48px;
