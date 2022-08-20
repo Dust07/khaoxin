@@ -26,7 +26,7 @@ export default function Home({ images }) {
       <Benefit />
       <GridProduct />
       <OrderMethod />
-      <LocationMap location={location} />
+      <LocationMap location={location[0]} />
       <Gallery images={images} />
       <Footer />
     </div>

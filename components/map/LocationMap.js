@@ -21,8 +21,8 @@ function LocationMap({ location }) {
     <div className={mapStyles.mapWrapper}>
       <Map
         initialViewState={{
-          longitude: location[0].longitude,
-          latitude: location[0].latitude,
+          longitude: location.longitude,
+          latitude: location.latitude,
           zoom: 18
         }}
         mapStyle="mapbox://styles/mapbox/streets-v9"
@@ -36,7 +36,7 @@ function LocationMap({ location }) {
           onClick={handlePinClick}
         >
         </Marker>
-        {isDisplay && <LocationInfo location={location[0]} handleCloseBtn={handleCloseBtn} />}
+        {isDisplay && <LocationInfo location={location} handleCloseBtn={handleCloseBtn} />}
       </Map>
 
 
