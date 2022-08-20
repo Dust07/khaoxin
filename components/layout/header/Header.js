@@ -29,26 +29,22 @@ const navItem = [
   },
 ]
 
-
 function Header() {
   const router = useRouter()
-  const pageShowing = navItem.find(item => item.url === router.asPath)
 
   const [clientWindowHeight, setClientWindowHeight] = useState("");
-  const [currentPage, setCurrentPage] = useState(pageShowing.id);
-  console.log()
+  const [currentPage, setCurrentPage] = useState(1);
 
   const handleScroll = () => {
     setClientWindowHeight(window.scrollY);
   };
 
-  const handleChangePage = (url) => {
-    const pageShowing = navItem.find(item => item.url === url)
+  useEffect(() => {
+    const pageShowing = navItem.find(item => item.url === router.asPath)
     setCurrentPage(pageShowing.id)
-  }
+  }, [router.asPath])
 
   useEffect(() => {
-    router.events.on('routeChangeStart', handleChangePage)
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   });
