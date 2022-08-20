@@ -1,7 +1,11 @@
+@import "../../../styles/variables.scss";
+
 .footerWrapper {
   width: 100%;
-  padding: 50px 0;
-  text-align: center;
+  height: $footer-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
   background-color: #000000;
 }

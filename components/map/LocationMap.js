@@ -5,8 +5,8 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import mapStyles from "./LocationMap.module.scss"
 import LocationInfo from './component/LocationInfo';
 
-function LocationMap({ location }) {
-  const [isDisplay, setIsDisplay] = useState(true)
+function LocationMap({ location, showModal }) {
+  const [isDisplay, setIsDisplay] = useState(showModal)
   mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_API_KEY
 
   const handlePinClick = () => {

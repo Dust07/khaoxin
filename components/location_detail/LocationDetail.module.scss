@@ -2,4 +2,50 @@
 
 .locationDetailWrapper {
   margin-top: $header-height;
+  height: calc(100vh - $header-height - $footer-height);
+}
+
+.locationContainer {
+  display: flex;
+  padding: 50px 0;
+}
+
+//IMAGE DIV
+.highlightImage {
+  width: 25%;
+  text-align: center;
+}
+
+//LOCATION LIST DIV
+.locationListContainer {
+  width: 500px;
+  padding: 0 24px;
+}
+.locationList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.listItem {
+  padding: 24px;
+  border: 1px solid black;
+  border-radius: 12px;
+  display: flex;
+  label {
+    margin-left: 8px;
+  }
+}
+.selected {
+  background-color: #e6ffff;
+}
+.listItemComingSoon {
+  padding: 24px;
+  border: 1px solid black;
+  border-radius: 12px;
+  text-align: center;
+}
+//MAP DIV
+.mapContainer {
+  flex-grow: 1;
+  height: auto;
 }
