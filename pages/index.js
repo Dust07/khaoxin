@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import Footer from '../components/layout/footer/Footer'
 import Gallery from '../components/gallery/Gallery'
-import Header from '../components/layout/header/Header'
 import styles from '../styles/Home.module.scss'
 import PromotionCarousel from '../components/promotion_carousel/PromotionCarousel';
 import GridProduct from '../components/grid_product/gridProduct';
@@ -12,15 +10,14 @@ import { location } from "../database/location.js"
 import Fade from '../components/animated_component/Fade'
 
 export default function Home({ images }) {
-
   return (
     <Fade>
 
       <div className={styles.webBackground}>
         <Head>
-          <title>Khaoxin</title>
+          <title>Trà sữa Khaoxin</title>
           <meta name="description" content="Trà sữa Khaoxin" />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/favicon.svg" />
         </Head>
 
         <PromotionCarousel />
