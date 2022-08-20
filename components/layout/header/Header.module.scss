@@ -12,6 +12,18 @@
   box-shadow: 1px 1px 10px rgb(0 0 0 / 15%);
   padding: 16px 0;
 }
+.selected {
+  position: relative;
+  ::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    bottom: 0;
+    left: 5%;
+    animation: revealLTR 0.5s forwards;
+  }
+}
 .brandLogo {
   position: absolute;
   left: 50%;

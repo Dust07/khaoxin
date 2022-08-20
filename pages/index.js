@@ -9,30 +9,31 @@ import Benefit from '../components/benefit/Benefit'
 import OrderMethod from '../components/order_method/OrderMethod'
 import LocationMap from '../components/map/LocationMap'
 import { location } from "../database/location.js"
+import Fade from '../components/animated_component/Fade'
 
 export default function Home({ images }) {
 
   return (
-    <div className={styles.webBackground}>
-      <Head>
-        <title>Khaoxin</title>
-        <meta name="description" content="Trà sữa Khaoxin" />
-        <link rel="icon" href="/favicon.ico" />
+    <Fade>
 
-      </Head>
+      <div className={styles.webBackground}>
+        <Head>
+          <title>Khaoxin</title>
+          <meta name="description" content="Trà sữa Khaoxin" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <Header />
-      <PromotionCarousel />
-      <Benefit />
-      <GridProduct />
-      <OrderMethod />
-      <div className={styles.locationWrapper}>
-        <LocationMap location={location[0]} showModal={true} />
+        <PromotionCarousel />
+        <Benefit />
+        <GridProduct />
+        <OrderMethod />
+        <div className={styles.locationWrapper}>
+          <LocationMap location={location[0]} showModal={true} />
+        </div>
+        <Gallery images={images} />
       </div>
-      <Gallery images={images} />
-      <Footer />
-    </div>
 
+    </Fade>
   )
 }
 

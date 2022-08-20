@@ -2,9 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router'
-import khaoxinLogo from "../../../public/assets/logo-icon.svg"
-import headerStyles from "./Header.module.scss"
 import { socialList } from "../../../database/icon"
+import headerStyles from "./Header.module.scss"
+import khaoxinLogo from "../../../public/assets/logo-icon.svg"
 
 const navItem = [
   {
@@ -32,9 +32,11 @@ const navItem = [
 
 function Header() {
   const router = useRouter()
+  const pageShowing = navItem.find(item => item.url === router.asPath)
 
   const [clientWindowHeight, setClientWindowHeight] = useState("");
-  const [currentPage, setCurrentPage] = useState(0);
+  const [currentPage, setCurrentPage] = useState(pageShowing.id);
+  console.log()
 
   const handleScroll = () => {
     setClientWindowHeight(window.scrollY);
@@ -46,15 +48,10 @@ function Header() {
   }
 
   useEffect(() => {
-    router.events.on('routeChangeComplete', handleChangePage)
-  }, [])
-
-  useEffect(() => {
     router.events.on('routeChangeStart', handleChangePage)
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   });
-
 
   return (
     <nav className={`navbar navbar-expand-lg navbar-light fixed-top ${headerStyles.navbarBackground}`}>
@@ -66,7 +63,7 @@ function Header() {
           <ul className="navbar-nav">
             {navItem.map(item => {
               return (
-                <li key={item.id} className="nav-item">
+                <li key={item.id} className={`nav-item ${currentPage === item.id ? headerStyles.selected : ''}`}>
                   <Link href={item.url}>
                     <a className={`nav-link ${currentPage === item.id ? "active" : ''}  `} aria-current="page" >{item.name}</a>
                   </Link>
