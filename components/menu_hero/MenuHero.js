@@ -31,7 +31,7 @@ function MenuHero() {
 
           <div className={menuHeroStyles.thirdPartyWrapper}>
             <p>hoặc đặt ngay trên các ứng dụng giao hàng</p>
-            <ThirdParty itemWidth={200} />
+            <ThirdParty itemWidth={150} />
           </div>
         </div>
         <div className={menuHeroStyles.rightSection}>
