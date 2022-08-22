@@ -44,3 +44,20 @@
   display: flex;
   gap: 12px;
 }
+
+//Responsive
+@media screen and (max-width: $medium) {
+  .headerWrapper {
+    padding: 32px 0;
+  }
+  .navbarBackground {
+    height: auto;
+  }
+  .selected {
+    ::after {
+      content: "";
+      display: hidden;
+      animation: none;
+    }
+  }
+}
