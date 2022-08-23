@@ -10,10 +10,10 @@ function OrderMethod() {
       <div className={`container ${orderStyles.orderMethod}`}>
         <div className="row">
           <div className="col">
-            <Image src={delivery} alt="delivery-image" width={300} height={300} />
+            <Image src={delivery} alt="delivery-image" />
           </div>
 
-          <div className={`col-7 ${orderStyles.textSection}`}>
+          <div className={`col-8 ${orderStyles.textSection}`}>
             <div className={orderStyles.textContainer}>
               <h2 className={orderStyles.h2Text}>ORDER ONLINE</h2>
               <p className={orderStyles.descText}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloremque repellat amet eveniet nobis! Accusamus autem cupiditate alias. Tempore numquam natus sapiente quos aut! Rerum cupiditate earum officiis recusandae qui.</p>

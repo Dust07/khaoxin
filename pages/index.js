@@ -24,9 +24,6 @@ export default function Home({ images }) {
         <Benefit />
         <GridProduct />
         <OrderMethod />
-        <div className={styles.locationWrapper}>
-          <LocationMap location={location[0]} showModal={true} />
-        </div>
         <Gallery images={images} />
       </div>
 

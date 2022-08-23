@@ -14,7 +14,6 @@ function ItemDisplay({ item }) {
         </div>
         <div className={gridStyles.itemText}>
           <div className={gridStyles.itemTitle}>
-            <div className={gridStyles.shadowText}>{item.shadowText}</div>
             <h3 className={gridStyles.name}>{item.name}</h3>
           </div>
           <p>{item.desc}</p>
