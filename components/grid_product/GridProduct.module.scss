@@ -7,7 +7,7 @@
 
 .sectionTitle {
   text-align: center;
-  padding: 100px 0 50px 0;
+  padding: 50px 0 50px 0;
 }
 .gridSectionWrapper {
   display: flex;
@@ -19,7 +19,6 @@
 .gridWrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
   padding: 24px;
   height: 100%;
 }
@@ -104,6 +103,9 @@
 .itemText {
   margin: 50px 50px 0 50px;
   overflow: hidden;
+  p {
+    font-weight: 300;
+  }
 }
 
 .itemTitle {
@@ -130,4 +132,52 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+//Responsive
+@media screen and (max-width: $medium) {
+  //GRID SELECTION
+  .gridWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    padding-right: 36px;
+    padding-left: 0;
+  }
+
+  //GRID SELECTION item
+  .gridItemWrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gridItemWrapper::before {
+    display: none;
+  }
+  .gridItemWrapper::after {
+    display: none;
+  }
+
+  //ITEM DISPLAY
+  .itemContainer {
+    border: 1px solid black;
+    width: 100%;
+  }
+  .itemText {
+    margin: 25px 25px 0 25px;
+    overflow: hidden;
+    p {
+      font-weight: 300;
+    }
+  }
+}
+
+@media screen and (max-width: $small) {
+  .gridWrapper {
+    grid-template-columns: repeat(1, 1fr);
+    padding-right: 36px;
+  }
 }

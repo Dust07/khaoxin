@@ -35,7 +35,7 @@ function MenuHero() {
           </div>
         </div>
         <div className={menuHeroStyles.rightSection}>
-          <Image src={menuHeroAsset} alt="hero-image" height={800} width={500} />
+          <Image src={menuHeroAsset} alt="hero-image" />
         </div>
       </div>
     </section>

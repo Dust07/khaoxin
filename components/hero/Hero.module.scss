@@ -1,7 +1,6 @@
 @import "../../styles/variables.scss";
 
 .sectionHero {
-  margin-top: $header-height;
   width: 100%;
   height: calc(100vh - $header-height);
   background-image: url("../../public/assets/mock-bg.jpg");

@@ -5,15 +5,39 @@
 }
 
 .navbarBackground {
+  position: fixed;
   height: $header-height;
-  background: rgb(42, 42, 42);
-  // background: linear-gradient(180deg, rgba(42, 42, 42, 0.3393732492997199) 0%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
   background: #ffffff;
   box-shadow: 1px 1px 10px rgb(0 0 0 / 15%);
-  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 99;
 }
+
+.navWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.navList {
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  li {
+    color: $inactive-text;
+    :hover {
+      color: black;
+    }
+  }
+}
+
 .selected {
   position: relative;
+  color: black !important;
   ::after {
     content: "";
     position: absolute;
@@ -24,6 +48,7 @@
     animation: revealLTR 0.5s forwards;
   }
 }
+
 .brandLogo {
   position: absolute;
   left: 50%;
@@ -43,4 +68,61 @@
 .socialWrapper {
   display: flex;
   gap: 12px;
+}
+
+//Toggle Button
+.toggleBtn {
+  display: none;
+  position: absolute;
+  top: 0;
+  transform: translateY(25%);
+  left: 5%;
+  padding: 12px;
+  border: 0.5px solid $light-gray;
+  background: #ffffff;
+}
+
+//Responsive
+@media screen and (max-width: $medium) {
+  .navbarBackground {
+    align-items: flex-end;
+  }
+  .navWrapper {
+    justify-content: flex-end;
+  }
+  .navList {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200px;
+    background: #ffffff;
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 15%);
+    flex-direction: column;
+    z-index: 99;
+    li {
+      padding: 12px 0px 12px 48px;
+    }
+    animation: fadeTopBot 0.5s forwards;
+  }
+  .toggleBtn {
+    display: block;
+  }
+  .showNav {
+    display: block;
+  }
+  .selected {
+    background-color: $light-blue;
+    ::after {
+      content: "";
+      display: hidden;
+      animation: none;
+    }
+  }
+}
+
+@media screen and (max-width: $small) {
+  .brandText {
+    display: none;
+  }
 }

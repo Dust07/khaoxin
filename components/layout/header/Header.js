@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import { socialList } from "../../../database/icon"
 import headerStyles from "./Header.module.scss"
 import khaoxinLogo from "../../../public/assets/logo-icon.svg"
+import barIcon from "../../../public/assets/bar.svg"
 
 const navItem = [
   {
@@ -34,10 +35,15 @@ function Header() {
 
   const [clientWindowHeight, setClientWindowHeight] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-
+  const [showNavbar, setShowNavbar] = useState(false);
   const handleScroll = () => {
     setClientWindowHeight(window.scrollY);
   };
+
+  const toggleShowNav = () => {
+    setShowNavbar(prevValue => !prevValue)
+    console.log(showNavbar)
+  }
 
   useEffect(() => {
     const pageShowing = navItem.find(item => item.url === router.asPath)
@@ -50,31 +56,28 @@ function Header() {
   });
 
   return (
-    <nav className={`navbar navbar-expand-lg navbar-light fixed-top ${headerStyles.navbarBackground}`}>
-      <div className="container-fluid">
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            {navItem.map(item => {
-              return (
-                <li key={item.id} className={`nav-item ${currentPage === item.id ? headerStyles.selected : ''}`}>
-                  <Link href={item.url}>
-                    <a className={`nav-link ${currentPage === item.id ? "active" : ''}  `} aria-current="page" >{item.name}</a>
-                  </Link>
-                </li>
-              )
-            })}
-
-          </ul>
+    <nav className={headerStyles.navbarBackground}>
+      <Link href="/">
+        <div className={headerStyles.brandLogo}>
+          <Image width={50} height={50} src={khaoxinLogo} alt="khaoxin-logo" />
+          <span className={headerStyles.brandText}>Khaoxin</span>
         </div>
-        <Link href="/">
-          <div className={headerStyles.brandLogo}>
-            <Image width={50} height={50} src={khaoxinLogo} alt="khaoxin-logo" />
-            <span className={headerStyles.brandText}>Khaoxin</span>
-          </div>
-        </Link>
+      </Link>
+      <div className={`${headerStyles.navWrapper}`}>
+        <button className={`${headerStyles.toggleBtn}`} onClick={toggleShowNav}>
+          <Image width={20} height={20} src={barIcon} className={showNavbar ? headerStyles.rotate : headerStyles.rotateRevert} alt="navbar" />
+        </button>
+        <ul className={`${headerStyles.navList} ${showNavbar ? headerStyles.showNav : ''}`}>
+          {navItem.map(item => {
+            return (
+              <li key={item.id} className={` ${currentPage === item.id ? headerStyles.selected : ''}`}>
+                <Link href={item.url}>
+                  <a className={`${currentPage === item.id ? "active" : ''}  `} aria-current="page" >{item.name}</a>
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
         <div className={headerStyles.socialWrapper}>
           {socialList.map((socialLogo, index) => {
             return <Image key={index} width={20} height={20} src={socialLogo.image} alt={`${socialLogo.name}-logo`} />

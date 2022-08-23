@@ -5,18 +5,21 @@ $grid-background-border: rgb(0, 0, 0);
 
 $light-blue: rgb(183, 227, 237);
 $light-gray: #f0f0f0;
+$inactive-text: rgb(175, 175, 175);
+//Responsive widths
+$small: 641px;
+$medium: 991px;
 
-.h1Text {
-  font-weight: 500;
-  font-size: 48px;
-  margin-bottom: 12px;
-  text-align: center;
-  padding-top: 50px;
-}
+.h1Text,
 .h2Text {
   font-weight: 500;
   font-size: 48px;
   margin-bottom: 12px;
+}
+
+.h1Text {
+  text-align: center;
+  padding-top: 50px;
 }
 
 .h3Text {
@@ -29,11 +32,42 @@ $light-gray: #f0f0f0;
   font-size: 16px;
 }
 
+.rotate {
+  transform: rotate(90deg) !important;
+  transition: 0.5s;
+}
+.rotateRevert {
+  transform: rotate(0deg) !important;
+  transition: 0.5s;
+}
+
+//RESPONSIVE
+@media screen and (max-width: $medium) {
+  .h1Text,
+  .h2Text {
+    font-size: 40px;
+  }
+  .descText {
+    font-size: 12px;
+  }
+}
+//ANIMATION
 @keyframes revealLTR {
   0% {
     width: 0%;
   }
   100% {
     width: 90%;
+  }
+}
+
+@keyframes fadeTopBot {
+  0% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 1;
+    top: 100%;
   }
 }
