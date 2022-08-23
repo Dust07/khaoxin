@@ -7,8 +7,10 @@ function PriceTag({ size, price }) {
   return (
     <div className={itemStyles.priceTag}>
       {size === "M"
-        ? <Image src={mediumIcon} alt="medium-icon" width={30} height={30} />
-        : <Image src={largeIcon} alt="large-icon" width={30} height={30} />
+        ?
+        <Image src={mediumIcon} alt="medium-icon" />
+        :
+        <Image src={largeIcon} alt="large-icon" />
       }
       <p>{price}đ</p>
     </div>

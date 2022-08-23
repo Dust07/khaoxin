@@ -7,7 +7,7 @@ export const productList = [
   {
     id: 1,
     category: 2,
-    name: "Trà sữa AAAAAADS SADSADQWR DFSDFWE",
+    name: "Trà sữa KX",
     price: {
       "M": 20000,
       "L": 25000
