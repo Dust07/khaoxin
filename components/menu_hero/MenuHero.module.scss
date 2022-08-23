@@ -1,14 +1,13 @@
 @import "../../styles/variables.scss";
 
 .menuHeroWrapper {
-  margin-top: $header-height;
   width: 100%;
-  height: calc(100vh - $header-height);
+  height: 100vh;
   background: linear-gradient(90deg, rgba(183, 227, 237, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .menuHero {
-  padding-top: 50px;
+  padding-top: calc($header-height + 50px);
   display: flex;
 }
 

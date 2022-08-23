@@ -5,7 +5,7 @@ $grid-background-border: rgb(0, 0, 0);
 
 $light-blue: rgb(183, 227, 237);
 $light-gray: #f0f0f0;
-
+$inactive-text: rgb(175, 175, 175);
 //Responsive widths
 $small: 641px;
 $medium: 991px;
@@ -32,12 +32,30 @@ $medium: 991px;
   font-weight: 300;
   font-size: 16px;
 }
-
+.rotate {
+  transform: rotate(90deg) !important;
+  transition: 0.5s;
+}
+.rotateRevert {
+  transform: rotate(0deg) !important;
+  transition: 0.5s;
+}
 @keyframes revealLTR {
   0% {
     width: 0%;
   }
   100% {
     width: 90%;
+  }
+}
+
+@keyframes fadeTopBot {
+  0% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 1;
+    top: 100%;
   }
 }
