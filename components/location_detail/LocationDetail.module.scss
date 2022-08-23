@@ -2,7 +2,7 @@
 
 .locationDetailWrapper {
   padding-top: $header-height;
-  height: calc(100vh - $header-height - $footer-height);
+  height: calc(100vh - $header-height);
 }
 
 .locationContainer {
@@ -48,4 +48,15 @@
 .mapContainer {
   flex-grow: 1;
   height: auto;
+}
+
+//Responsive
+@media screen and (max-width: $medium) {
+  .highlightImage {
+    display: none;
+  }
+  .locationListContainer {
+    width: 50%;
+    padding: 0 24px;
+  }
 }
