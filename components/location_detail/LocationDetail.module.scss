@@ -2,7 +2,7 @@
 
 .locationDetailWrapper {
   padding-top: $header-height;
-  height: calc(100vh - $header-height);
+  min-height: calc(100vh - $header-height);
 }
 
 .locationContainer {
