@@ -4,7 +4,6 @@ import { productList } from "../../database/product"
 import menuStyles from "./MenuDisplay.module.scss"
 import CategoryBtn from "../reusable/btn/categoryBtn"
 import Item from "../reusable/item/Item"
-import BotToTopFade from "../animated_component/BotToTopFade"
 import { useInView } from "react-intersection-observer"
 
 function MenuDisplay() {
@@ -57,9 +56,7 @@ function MenuDisplay() {
           <div className={menuStyles.item} ref={ref}>
             {inView && selectedProducts.map(product => {
               return (
-                <BotToTopFade key={product.id} name={product.name} >
-                  <Item product={product} />
-                </BotToTopFade>
+                <Item key={product.id} product={product} />
               )
             })}
           </div>

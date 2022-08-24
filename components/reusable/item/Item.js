@@ -1,11 +1,12 @@
 import Image from "next/image"
+import BotToTopFade from "../../animated_component/BotToTopFade"
 import HoverClick from "../../animated_component/HoverClick"
 import PriceTag from "./component/PriceTag"
 import itemStyles from "./Item.module.scss"
 
 function Item({ product }) {
   return (
-    <div className={itemStyles.itemContainer}>
+    <BotToTopFade name={product.name} className={itemStyles.itemContainer}>
       <div className={itemStyles.itemUpperInfo}>
         <div className={itemStyles.imageContainer}>
           <HoverClick>
@@ -18,7 +19,7 @@ function Item({ product }) {
         <PriceTag size="M" price={product.price.M} />
         <PriceTag size="L" price={product.price.L} />
       </div>
-    </div>
+    </BotToTopFade>
   )
 }
 
