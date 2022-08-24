@@ -1,6 +1,6 @@
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
-
+@import "./variables.scss";
 html,
 body {
   padding: 0;
@@ -9,7 +9,6 @@ body {
   max-width: 2000px;
   user-select: none;
 }
-
 * {
   box-sizing: border-box;
 }

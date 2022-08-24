@@ -180,4 +180,8 @@
     grid-template-columns: repeat(1, 1fr);
     padding-right: 36px;
   }
+
+  .gridWrapper li:nth-last-child(-n + 3) {
+    display: none;
+  }
 }

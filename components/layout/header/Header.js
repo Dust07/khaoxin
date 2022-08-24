@@ -42,7 +42,10 @@ function Header() {
 
   const toggleShowNav = () => {
     setShowNavbar(prevValue => !prevValue)
-    console.log(showNavbar)
+  }
+
+  const handleHideNav = () => {
+    setShowNavbar(false)
   }
 
   useEffect(() => {
@@ -70,11 +73,12 @@ function Header() {
         <ul className={`${headerStyles.navList} ${showNavbar ? headerStyles.showNav : ''}`}>
           {navItem.map(item => {
             return (
-              <li key={item.id} className={` ${currentPage === item.id ? headerStyles.selected : ''}`}>
-                <Link href={item.url}>
+              <Link href={item.url} key={item.id}>
+                <li className={` ${headerStyles.cursorPointer} ${currentPage === item.id ? headerStyles.selected : ''}`} onClick={handleHideNav}>
                   <a className={`${currentPage === item.id ? "active" : ''}  `} aria-current="page" >{item.name}</a>
-                </Link>
-              </li>
+                </li>
+              </Link>
+
             )
           })}
         </ul>
