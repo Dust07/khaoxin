@@ -1,14 +1,13 @@
 import Image from "next/image"
 import orderStyles from "./OrderMethod.module.scss"
 import delivery from "../../public/assets/delivery.svg"
+import ThirdParty from "../reusable/third_party/ThirdParty"
 import WebOrderBtn from "../reusable/btn/WebOrderBtn"
-import ThirdPartyItem from "../reusable/third_party_item/ThirdPartyItem"
-import { thirdPartyList } from "../../database/thirdParty"
 
 function OrderMethod() {
   return (
-    <section className={`container ${orderStyles.orderMethodWrapper}`}>
-      <div className={`${orderStyles.orderMethod}`}>
+    <section className={orderStyles.orderMethodWrapper}>
+      <div className={`container ${orderStyles.orderMethod}`}>
         <div className="row">
           <div className="col">
             <Image src={delivery} alt="delivery-image" />
@@ -26,9 +25,8 @@ function OrderMethod() {
       </div>
 
       <div className={orderStyles.thirdPartyWrapper}>
-        {thirdPartyList.map((item) => {
-          return <ThirdPartyItem key={item.id} item={item} />
-        })}
+        <p>Khaoxin đã có mặt trên các ứng dụng</p>
+        <ThirdParty itemWidth={300} />
       </div>
     </section >
   )

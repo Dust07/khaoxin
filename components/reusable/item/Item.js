@@ -9,15 +9,16 @@ function Item({ product }) {
     <BotToTopFade name={product.name} className={itemStyles.itemContainer}>
       <div className={itemStyles.itemUpperInfo}>
         <div className={itemStyles.imageContainer}>
-          <HoverClick>
-            <Image src={product.image} alt={product.name} />
-          </HoverClick>
+          <div className={itemStyles.productImage}>
+            <HoverClick>
+              <Image src={product.image} alt={product.name} />
+            </HoverClick>
+          </div>
         </div>
         <strong className={itemStyles.itemName}>{product.name}</strong>
       </div>
       <div>
-        <PriceTag size="M" price={product.price.M} />
-        <PriceTag size="L" price={product.price.L} />
+        {product.price.M / 1000} | {product.price.L / 1000}
       </div>
     </BotToTopFade>
   )
