@@ -132,4 +132,36 @@ export const productList = [
     desc: "Description",
     isAvailable: true,
   },
+  {
+    id: 9,
+    category: 1,
+    name: "Khaoxin Signature 1",
+    price: {
+      "M": 40000,
+      "L": 55000
+    },
+    discount: {
+      active: false,
+      amount: null
+    },
+    image: blueDrink,
+    desc: "Description",
+    isAvailable: true,
+  },
+  {
+    id: 10,
+    category: 1,
+    name: "Khaoxin Signature 2",
+    price: {
+      "M": 40000,
+      "L": 55000
+    },
+    discount: {
+      active: false,
+      amount: null
+    },
+    image: blueDrink,
+    desc: "Description",
+    isAvailable: true,
+  },
 ]

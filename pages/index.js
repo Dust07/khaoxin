@@ -21,7 +21,7 @@ export default function Home({ images }) {
         </Head>
 
         <PromotionCarousel />
-        <Benefit />
+        {/* <Benefit /> */}
         <GridProduct />
         <OrderMethod />
         <Gallery images={images} />

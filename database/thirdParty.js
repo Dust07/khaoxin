@@ -1,6 +1,6 @@
-import grab from "../public/assets/grab.svg"
-import shopeefood from "../public/assets/shopeefood.svg"
-import baemin from "../public/assets/baemin.svg"
+import grab from "../public/assets/KGrab.png"
+import shopeefood from "../public/assets/KShopeeF.png"
+import baemin from "../public/assets/KBaemin.png"
 
 export const thirdPartyList = [
   {

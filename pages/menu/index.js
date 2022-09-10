@@ -5,7 +5,7 @@ import Fade from "../../components/animated_component/Fade"
 function Menu() {
   return (
     <Fade>
-      <MenuHero />
+      {/* <MenuHero /> */}
       <MenuDisplay />
     </Fade>
 
