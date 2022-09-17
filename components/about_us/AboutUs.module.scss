@@ -1,0 +1,52 @@
+@import "../../styles/variables.scss";
+
+.h2Text {
+  font-size: 30px;
+  text-align: center;
+}
+
+.sectionAbout {
+  p {
+    font-weight: 300;
+    line-height: 2rem;
+  }
+  > div {
+    margin-top: 50px;
+  }
+}
+
+.history {
+}
+
+.slogan {
+  display: flex;
+  gap: 10rem;
+  margin-top: 100px !important;
+}
+
+.slogan_desc {
+  h2 {
+    text-align: left;
+  }
+}
+
+.story {
+  margin-top: 100px !important;
+  display: flex;
+  gap: 4rem;
+  > div {
+    position: relative;
+  }
+  h3 {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 8px;
+      height: 2rem;
+      background-color: black;
+    }
+  }
+}
