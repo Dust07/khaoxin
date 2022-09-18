@@ -1,7 +1,7 @@
 import Fade from "../../components/animated_component/Fade"
 import LocationDetail from "../../components/location_detail/LocationDetail"
 
-function index() {
+function Location() {
   return (
     <Fade>
       <LocationDetail />
@@ -9,4 +9,4 @@ function index() {
   )
 }
 
-export default index
+export default Location
