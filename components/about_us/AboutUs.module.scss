@@ -50,3 +50,13 @@
     }
   }
 }
+
+.strengthContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.strengthWrapper {
+  width: 80%;
+}
