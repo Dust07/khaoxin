@@ -1,6 +1,8 @@
 import Image from "next/image"
 import aboutStyles from "./AboutUs.module.scss"
 import about1 from "../../public/assets/about1.svg"
+import strength from "../../public/assets/strength.png"
+
 function AboutUsContent() {
   return (
     <section className={`container ${aboutStyles.sectionAbout}`}>
@@ -57,19 +59,11 @@ function AboutUsContent() {
         </p>
       </div>
 
-      <div>
+      <div className={aboutStyles.strengthContainer}>
         <h2 className={aboutStyles.h2Text}>Values / Strengths</h2>
-        <ul>
-          <li>Simple & unique design</li>
-          <li>High quality ingredients</li>
-          <li>Lean operation system</li>
-          <li>Affordability</li>
-          <li>Kindly serve</li>
-          <li>Speed</li>
-          <li>Cold brew tea</li>
-          <li>Minimalism everything</li>
-          <li>Technology</li>
-        </ul>
+        <div className={aboutStyles.strengthWrapper}>
+          <Image src={strength} alt="Value and Strength" />
+        </div>
       </div>
     </section>
   )
