@@ -17,7 +17,7 @@ export default function Home({ images }) {
         <Head>
           <title>Trà sữa Khaoxin</title>
           <meta name="description" content="Trà sữa Khaoxin" />
-          <link rel="icon" href="/favicon.svg" />
+
         </Head>
 
         <PromotionCarousel />
