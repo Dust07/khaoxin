@@ -1,30 +1,8 @@
 import locationStyles from "./LocationDetail.module.scss"
-import LocationMap from '../../components/map/LocationMap'
 import { location } from "../../database/location.js"
 import LocationItem from "./location_item/LocationItem"
-import { useState } from "react"
-import { getLocationOrigin } from "next/dist/shared/lib/utils"
 
 function LocationDetail() {
-  const [lat, setLat] = useState('lat')
-  const [long, setLong] = useState('long')
-  const [count, setCount] = useState(0)
-
-  const getLocation = () => {
-    setCount((prev) => prev + 1)
-
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(function (position) {
-        setLat(position.coords.latitude)
-        setLong(position.coords.longitude)
-      });
-    }
-    else {
-      setLat('No geolocation');
-      setLong('No geolocation');
-    }
-  }
-
   return (
     <section className={locationStyles.locationDetailWrapper}>
       <h1 className={locationStyles.h1Text}>Danh sách cửa hàng Khaoxin</h1>
@@ -44,13 +22,6 @@ function LocationDetail() {
             </li>
           </ul>
         </div>
-      </div>
-
-      <div>
-        <p>{lat}</p>
-        <p>{long}</p>
-        <button onClick={() => getLocation()}>Get location</button>
-        <p>Click: {count} times </p>
       </div>
     </section>
   )
