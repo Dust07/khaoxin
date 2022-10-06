@@ -8,7 +8,6 @@ import { getLocationOrigin } from "next/dist/shared/lib/utils"
 function LocationDetail() {
   const [lat, setLat] = useState('lat')
   const [long, setLong] = useState('long')
-  const userAgent = navigator.userAgent;
 
   const getLocation = () => {
     navigator.geolocation.getCurrentPosition(function (position) {
