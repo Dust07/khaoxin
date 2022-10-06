@@ -13,10 +13,16 @@ function LocationDetail() {
   const getLocation = () => {
     setCount((prev) => prev + 1)
 
-    navigator.geolocation.getCurrentPosition(function (position) {
-      setLat(position.coords.latitude)
-      setLong(position.coords.longitude)
-    });
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        setLat(position.coords.latitude)
+        setLong(position.coords.longitude)
+      });
+    }
+    else {
+      setLat('No geolocation');
+      setLong('No geolocation');
+    }
   }
 
   return (
