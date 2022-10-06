@@ -1,22 +1,23 @@
 import locationStyles from "./LocationDetail.module.scss"
 import LocationMap from '../../components/map/LocationMap'
 import { location } from "../../database/location.js"
-import Image from "next/image"
-import { useState } from "react"
 import LocationItem from "./location_item/LocationItem"
+import { useState } from "react"
+import { getLocationOrigin } from "next/dist/shared/lib/utils"
 
 function LocationDetail() {
-  const [selectedLocation, setSelectedLocation] = useState(0)
+  const [lat, setLat] = useState('lat')
+  const [long, setLong] = useState('long')
+  const getLocation = () => {
+    navigator.geolocation.getCurrentPosition(function (position) {
+      setLat(position.coords.latitude)
+      setLong(position.coords.longitude)
+    });
+  }
   return (
     <section className={locationStyles.locationDetailWrapper}>
       <h1 className={locationStyles.h1Text}>Danh sách cửa hàng Khaoxin</h1>
-
       <div className={`container ${locationStyles.locationContainer}`}>
-        <div className={locationStyles.highlightImage}>
-          <h2 className={locationStyles.h3Text}>{location[selectedLocation].name}</h2>
-          <Image src={location[selectedLocation].image} alt={location[selectedLocation].name} />
-        </div>
-
         <div className={locationStyles.locationListContainer}>
           <ul className={locationStyles.locationList}>
             {location.map(item => {
@@ -32,13 +33,13 @@ function LocationDetail() {
             </li>
           </ul>
         </div>
-
-        <div className={locationStyles.mapContainer}>
-          <LocationMap location={location[0]} showModal={false} />
-        </div>
-
       </div>
 
+      <div>
+        <p>{lat}</p>
+        <p>{long}</p>
+        <button onClick={() => getLocation()}>Get location</button>
+      </div>
     </section>
   )
 }

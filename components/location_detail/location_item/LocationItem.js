@@ -1,10 +1,11 @@
 import locationStyles from "../LocationDetail.module.scss"
+import GetDirectionBtn from "../../reusable/btn/GetDirectionBtn"
 
 function LocationItem({ location }) {
   return (
     <li className={`${locationStyles.listItem} ${locationStyles.selected}`}>
-      <input id={location.id} name="locationItem" type="radio" value={location.id} defaultChecked />
-      <label htmlFor={location.id}>{location.address}</label>
+      <p>{location.address}</p>
+      <GetDirectionBtn text="Xem bản đồ" getDirectionURL={location.getDirectionURL} />
     </li>
   )
 }

@@ -18,7 +18,7 @@
 
 //LOCATION LIST DIV
 .locationListContainer {
-  width: 35%;
+  width: 100%;
   padding: 0 24px;
 }
 .locationList {
@@ -31,6 +31,8 @@
   border: 1px solid black;
   border-radius: 12px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   label {
     margin-left: 8px;
   }
@@ -48,15 +50,4 @@
 .mapContainer {
   flex-grow: 1;
   height: auto;
-}
-
-//Responsive
-@media screen and (max-width: $medium) {
-  .highlightImage {
-    display: none;
-  }
-  .locationListContainer {
-    width: 50%;
-    padding: 0 24px;
-  }
 }
