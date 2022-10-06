@@ -9,13 +9,16 @@ function LocationDetail() {
   const [lat, setLat] = useState('lat')
   const [long, setLong] = useState('long')
   const [count, setCount] = useState(0)
+
   const getLocation = () => {
+    setCount((prev) => prev + 1)
+
     navigator.geolocation.getCurrentPosition(function (position) {
       setLat(position.coords.latitude)
       setLong(position.coords.longitude)
-      setCount((prev) => prev + 1)
     });
   }
+
   return (
     <section className={locationStyles.locationDetailWrapper}>
       <h1 className={locationStyles.h1Text}>Danh sách cửa hàng Khaoxin</h1>
