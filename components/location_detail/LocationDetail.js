@@ -8,11 +8,12 @@ import { getLocationOrigin } from "next/dist/shared/lib/utils"
 function LocationDetail() {
   const [lat, setLat] = useState('lat')
   const [long, setLong] = useState('long')
-
+  const [count, setCount] = useState(0)
   const getLocation = () => {
     navigator.geolocation.getCurrentPosition(function (position) {
       setLat(position.coords.latitude)
       setLong(position.coords.longitude)
+      setCount((prev) => prev + 1)
     });
   }
   return (
@@ -40,6 +41,7 @@ function LocationDetail() {
         <p>{lat}</p>
         <p>{long}</p>
         <button onClick={() => getLocation()}>Get location</button>
+        <p>Click: {count} times </p>
       </div>
     </section>
   )
