@@ -5,6 +5,7 @@ const withPWA = require('next-pwa')({
 })
 
 const nextConfig = {
+  distDir: "build",
   reactStrictMode: true,
   swcMinify: true,
 }
