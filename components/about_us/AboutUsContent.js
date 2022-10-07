@@ -1,6 +1,5 @@
 import Image from "next/image"
 import aboutStyles from "./AboutUs.module.scss"
-import about1 from "../../public/assets/about1.svg"
 import strength from "../../public/assets/strength.png"
 
 function AboutUsContent() {
@@ -19,15 +18,16 @@ function AboutUsContent() {
           </p>
           <br></br>
           <p>
-            Và từ đây chúng tôi tạo ra cái tên “khaoxin” với k means ‘kustomer is a king’ and ‘haoxin’ (được chúng tôi khắc họa lại từ “好心) means “tử tế”. khaoxin mang ý nghĩa “tử tế với khách hàng”.
+            Và từ đây chúng tôi tạo ra cái tên “Khaoxin”
+            <br></br>
+            + Chữ K tượng trưng cho ‘K’hách hàng của chúng tôi: ‘Kustomer is King’
+            <br></br>
+            + ‘haoxin’ (được chúng tôi khắc họa lại từ “好心“) mang ý nghĩa của sự “tử tế, tận tâm”. Thông điệp của Khaoxin: dù chuyện gì xảy ra, chúng tôi vẫn sẽ luôn đổi xử tử tế với khách hàng.
           </p>
-        </div>
-        <div>
-          <Image src={about1} className={aboutStyles.sloganImage} alt="about 1" />
         </div>
       </div>
 
-      <div className={aboutStyles.story}>
+      <div className={aboutStyles.vision}>
         <div>
           <h3>Vision</h3>
           <p>Become to be a chuỗi bubble tea – technology. Chúng tôi luôn nhắm đến việc tối ưu hóa mọi thứ để nhằm mang đến cho khách hàng sự đơn giản, thuận tiện nhất. Chúng tôi mong muốn được phục vụ khách hàng một cách tốt nhất, đem đến cho họ những trải nghiệm vượt ngoài sự mong đợi trên từng điểm chạm mà chúng tôi thiết kế dù bất kì nơi đâu hay bất cứ giây phút nào.</p>
@@ -60,7 +60,6 @@ function AboutUsContent() {
       </div>
 
       <div className={aboutStyles.strengthContainer}>
-        <h2 className={aboutStyles.h2Text}>Values / Strengths</h2>
         <div className={aboutStyles.strengthWrapper}>
           <Image src={strength} alt="Value and Strength" />
         </div>

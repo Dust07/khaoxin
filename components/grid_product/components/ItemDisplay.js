@@ -9,7 +9,7 @@ function ItemDisplay({ item }) {
         <div className={gridStyles.itemImageWrapper}>
           <LeftToRightFade name={item.name} className={gridStyles.itemImage}>
             <div className={gridStyles.displayItemBackground} style={{ background: item.color }} ></div>
-            <Image className={gridStyles.image} width={200} height={300} src={item.image} alt={item.name} />
+            <Image className={gridStyles.highlightedImage} src={item.image} alt={item.name} />
           </LeftToRightFade>
         </div>
         <div className={gridStyles.itemText}>
