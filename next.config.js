@@ -5,6 +5,11 @@ const withPWA = require('next-pwa')({
 })
 
 const nextConfig = {
+  distDir: "build",
+  images: {
+    loader: 'akamai',
+    path: '',
+  },
   reactStrictMode: true,
   swcMinify: true,
 }

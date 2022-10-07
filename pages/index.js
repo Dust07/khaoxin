@@ -16,26 +16,25 @@ export default function Home({ images }) {
         </Head>
 
         <PromotionCarousel />
-        {/* <Benefit /> */}
         <GridProduct />
         <OrderMethod />
-        <Gallery images={images} />
+        {/* <Gallery images={images} /> */}
       </div>
     </Fade>
   )
 }
 
-export async function getServerSideProps() {
-  try {
-    const response = await fetch('https://picsum.photos/v2/list?limit=10');
-    const data = await response.json()
-    return {
-      props: {
-        images: data
-      }
-    }
-  } catch (error) {
-    console.error(error);
-  }
+// export async function getServerSideProps() {
+//   try {
+//     const response = await fetch('https://picsum.photos/v2/list?limit=10');
+//     const data = await response.json()
+//     return {
+//       props: {
+//         images: data
+//       }
+//     }
+//   } catch (error) {
+//     console.error(error);
+//   }
 
-}
+// }

@@ -57,9 +57,15 @@
   .itemSection {
     padding-left: 50px;
   }
+  .categoryItem {
+    font-size: 12px;
+    &:hover {
+      color: red;
+    }
+  }
 }
 
-@media screen and (max-width: $medium) {
+@media screen and (max-width: $small) {
   .category {
     margin-left: 2%;
   }
