@@ -179,6 +179,13 @@
   }
 }
 
+@media screen and (max-width: $average) {
+  .sectionTitle {
+    text-align: center;
+    padding: 0 10% 50px 10%;
+  }
+}
+
 @media screen and (max-width: $small) {
   .gridWrapper {
     grid-template-columns: repeat(1, 1fr);

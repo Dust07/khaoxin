@@ -2,7 +2,10 @@
 
 .itemContainer {
   flex-grow: 1;
-  text-align: justify;
+  border: 1px solid #cecece;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0 0.09375rem 0.09375rem 0 rgb(0 0 0 / 8%);
+  box-shadow: 0 0.09375rem 0.09375rem 0rgba (0, 0, 0, 0.08);
 }
 
 .itemImage {
@@ -13,4 +16,12 @@
 .itemBtn {
   text-align: center;
   padding: 24px 0;
+}
+
+.textContainer {
+  padding: 0 15%;
+  h3 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
 }
