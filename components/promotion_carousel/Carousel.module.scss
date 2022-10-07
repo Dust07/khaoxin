@@ -1,5 +1,22 @@
 @import "../../styles/variables.scss";
 
-.carouselWrapper {
+.carouselContainer {
   padding-top: $header-height;
+}
+.promotionContainer {
+  padding-top: $header-height;
+  div {
+    margin-bottom: 12px;
+  }
+}
+.promotionContainer {
+  display: none;
+}
+@media screen and (max-width: $average) {
+  .promotionContainer {
+    display: block;
+  }
+  .carouselContainer {
+    display: none;
+  }
 }

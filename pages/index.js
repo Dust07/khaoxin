@@ -3,16 +3,12 @@ import Gallery from '../components/gallery/Gallery'
 import styles from '../styles/Home.module.scss'
 import PromotionCarousel from '../components/promotion_carousel/PromotionCarousel';
 import GridProduct from '../components/grid_product/gridProduct';
-import Benefit from '../components/benefit/Benefit'
 import OrderMethod from '../components/order_method/OrderMethod'
-import LocationMap from '../components/map/LocationMap'
-import { location } from "../database/location.js"
 import Fade from '../components/animated_component/Fade'
 
 export default function Home({ images }) {
   return (
     <Fade>
-
       <div className={styles.webBackground}>
         <Head>
           <title>Trà sữa Khaoxin</title>
@@ -25,7 +21,6 @@ export default function Home({ images }) {
         <OrderMethod />
         <Gallery images={images} />
       </div>
-
     </Fade>
   )
 }

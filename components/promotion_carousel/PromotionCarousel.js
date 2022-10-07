@@ -6,8 +6,19 @@ import carouselStyles from "./Carousel.module.scss"
 
 function PromotionCarousel() {
   return (
-    <section>
-      <div className={carouselStyles.carouselWrapper}>
+    <section className={carouselStyles.promotionSection}>
+      <div className={carouselStyles.promotionContainer}>
+        <div>
+          <Image src={promotion} height={700} alt="promotion1" />
+        </div>
+        <div>
+          <Image src={promotion} height={700} alt="promotion2" />
+        </div>
+        <div>
+          <Image src={promotion} height={700} alt="promotion3" />
+        </div>
+      </div>
+      <div className={carouselStyles.carouselContainer}>
         <Carousel
           autoPlay={true}
           infiniteLoop={true}
@@ -15,13 +26,13 @@ function PromotionCarousel() {
           showThumbs={false}
         >
           <div>
-            <Image src={promotion} height={600} alt="promotion1" />
+            <Image src={promotion} height={700} alt="promotion1" />
           </div>
           <div>
-            <Image src={promotion} height={600} alt="promotion2" />
+            <Image src={promotion} height={700} alt="promotion2" />
           </div>
           <div>
-            <Image src={promotion} height={600} alt="promotion3" />
+            <Image src={promotion} height={700} alt="promotion3" />
           </div>
         </Carousel>
       </div>

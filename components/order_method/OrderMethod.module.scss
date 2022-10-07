@@ -23,15 +23,26 @@
   padding: 50px 0;
   margin-top: 50px;
   display: flex;
-  gap: 48px;
+  gap: 12px;
   justify-content: space-between;
 }
 
 //RESPONSIVE
-@media screen and (max-width: $small) {
+@media screen and (max-width: $medium) {
+  .h2Text {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: $average) {
   .thirdPartyWrapper {
-    padding: 50px 0;
+    padding: 50px 20%;
     margin-top: 50px;
-    display: block;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .orderMethodImage {
+    display: none;
   }
 }
