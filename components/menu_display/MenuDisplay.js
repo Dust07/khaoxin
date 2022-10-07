@@ -4,6 +4,7 @@ import { productList } from "../../database/product"
 import menuStyles from "./MenuDisplay.module.scss"
 import CategoryBtn from "../reusable/btn/categoryBtn"
 import Item from "../reusable/item/Item"
+import BotToTopFade from "../animated_component/BotToTopFade"
 
 function MenuDisplay() {
 
@@ -49,9 +50,6 @@ function MenuDisplay() {
   return (
     <section className={menuStyles.menuWrapper}>
       <div className={`container`}>
-        {/* <div className={menuStyles.menuTitle}>
-          <h1>KHAOXIN MENU</h1>
-        </div> */}
         <div className={menuStyles.menuDisplay}>
           <div className={menuStyles.category}>
             <ul className={menuStyles.categoryList}>
@@ -73,7 +71,9 @@ function MenuDisplay() {
             {selectedProducts.map(item => {
               return (
                 <div key={item.category.id} className={menuStyles.categorySection}>
-                  <h3 className={`${menuStyles.categoryTitle} ${menuStyles.h3Text}`}>{item.category.name}</h3>
+                  <BotToTopFade>
+                    <h3 className={`${menuStyles.categoryTitle} ${menuStyles.h3Text}`}>{item.category.name}</h3>
+                  </BotToTopFade>
                   <div className={menuStyles.item}>
                     {item.products.map(product => {
                       return (

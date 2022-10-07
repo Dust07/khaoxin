@@ -27,7 +27,8 @@
   }
 }
 
-.story {
+//VISION
+.vision {
   margin-top: 100px !important;
   display: flex;
   gap: 4rem;
@@ -37,6 +38,7 @@
   h3 {
     margin-left: 15px;
     margin-bottom: 20px;
+    font-weight: 600;
     &:before {
       content: "";
       position: absolute;
@@ -45,6 +47,13 @@
       height: 2rem;
       background-color: black;
     }
+  }
+}
+@media screen and (max-width: $medium) {
+  .vision {
+    margin-top: 100px !important;
+    display: flex;
+    flex-direction: column;
   }
 }
 
