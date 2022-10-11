@@ -9,7 +9,7 @@ import categoryImage from "../public/assets/drinksample.jpg"
 export const productCategory = [
   {
     id: 0,
-    name: "Our signature",
+    name: "Khaoxin's Creative Mix",
     image: categoryImage,
     productPromote: [
       {
@@ -39,7 +39,7 @@ export const productCategory = [
   },
   {
     id: 1,
-    name: "Khaoxin Tea",
+    name: "Trà sữa",
     image: categoryImage,
     productPromote: [
       {
@@ -69,7 +69,7 @@ export const productCategory = [
   },
   {
     id: 2,
-    name: "Milk Tea2",
+    name: "Trà Trái Cây",
     image: categoryImage,
     productPromote: [
       {
@@ -99,7 +99,7 @@ export const productCategory = [
   },
   {
     id: 3,
-    name: "Fruit Tea",
+    name: "Latte",
     image: categoryImage,
 
     productPromote: [
@@ -130,7 +130,7 @@ export const productCategory = [
   },
   {
     id: 4,
-    name: "Coffee Latte4",
+    name: "Macchiato",
     image: categoryImage,
     productPromote: [
       {
@@ -160,7 +160,7 @@ export const productCategory = [
   },
   {
     id: 5,
-    name: "Macchiato",
+    name: "Topping",
     image: categoryImage,
     productPromote: [
       {

@@ -38,3 +38,25 @@ yarn-error.log*
 **/public/sw.js.map
 **/public/workbox-*.js.map
 **/public/worker-*.js.map
+
+#Firebase tools
+/.vscode
+node_modules
+/coverage
+/.coverage
+/.nyc_output
+firebase-debug.log
+firebase-debug.*.log
+npm-debug.log
+ui-debug.log
+yarn.lock
+.npmrc
+
+.DS_Store
+.idea
+*.iml
+*.tgz
+scripts/*.json
+
+lib/
+dev/

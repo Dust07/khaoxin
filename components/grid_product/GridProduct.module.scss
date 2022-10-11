@@ -27,7 +27,7 @@
 .gridItemWrapper {
   position: relative;
   width: 100px;
-  height: 100px;
+  height: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +36,7 @@
   content: "";
   position: absolute;
   width: 1px;
-  height: 120px;
+  height: 130px;
   background: $grid-background-border;
   display: flex;
   justify-content: center;
@@ -57,8 +57,7 @@
   z-index: -1;
 }
 .gridItem {
-  width: 50px;
-  height: 80px;
+  width: 60px;
 }
 
 .gridItemBackground {
@@ -95,9 +94,8 @@
 
 .itemImage {
   position: absolute;
-  width: 200px;
-  height: 300px;
-  transform: scale(1.3) rotate(15deg);
+  width: 180px;
+  transform: scale(1.2) rotate(15deg);
 }
 
 .itemText {
@@ -148,8 +146,6 @@
   //GRID SELECTION item
   .gridItemWrapper {
     position: relative;
-    width: 100px;
-    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,8 +158,8 @@
   }
   .itemImage {
     position: absolute;
-    width: 170px;
-    transform: scale(1.3) rotate(15deg);
+    width: 150px;
+    transform: scale(1.2) rotate(15deg);
   }
   //ITEM DISPLAY
   .itemContainer {

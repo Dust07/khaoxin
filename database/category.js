@@ -5,31 +5,26 @@ export const categoryList = [
   },
   {
     id: 1,
-    name: "Signature"
+    name: "Khaoxin's Creative Mix"
   },
   {
     id: 2,
-    name: "Trà"
-  },
-  {
-    id: 3,
     name: "Trà sữa"
   },
   {
-    id: 4,
+    id: 3,
     name: "Trà trái cây"
   },
   {
+    id: 4,
+    name: "Latte"
+  },
+  {
     id: 5,
-    name: "Coffee Latte"
+    name: "Macchiato"
   },
   {
     id: 6,
-    name: "Macchiatto"
-  },
-  {
-    id: 7,
     name: "Topping"
   },
-
 ]
