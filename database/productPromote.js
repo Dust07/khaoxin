@@ -14,7 +14,7 @@ export const productPromote = [
     image: TsTranChau,
     coverImage: null,
     color: "#40a1d0",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, vel dolorem qui illum corporis mollitia iste hic? Enim ullam eligendi pariatur, vitae nisi, numquam, ex laboriosam placeat reiciendis suscipit veniam!",
+    desc: "Hương trà Đài Loan lan tỏa hòa quyện với mùi sữa thơm béo tạo nên ly trà sữa đậm vị tiếp thêm năng lượng cho một ngày làm việc mệt mỏi.",
     price: {
       M: 20000,
       L: 25000
@@ -27,7 +27,7 @@ export const productPromote = [
     image: traOiHong,
     coverImage: yellowDrinkCover,
     color: "#f7d02d",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, vel dolorem qui illum corporis mollitia iste hic? Enim ullam eligendi pariatur, vitae nisi, numquam, ex laboriosam placeat reiciendis suscipit veniam!",
+    desc: "Coming soon...",
     price: {
       M: 20000,
       L: 25000
@@ -40,7 +40,7 @@ export const productPromote = [
     image: placeholderDrink,
     coverImage: purpleDrinkCover,
     color: "#b547eb",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, vel dolorem qui illum corporis mollitia iste hic? Enim ullam eligendi pariatur, vitae nisi, numquam, ex laboriosam placeat reiciendis suscipit veniam!",
+    desc: "Coming soon...",
     price: {
       M: 20000,
       L: 25000
@@ -53,7 +53,7 @@ export const productPromote = [
     image: placeholderDrink,
     coverImage: blueDrinkCover,
     color: "#40a1d0",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, vel dolorem qui illum corporis mollitia iste hic? Enim ullam eligendi pariatur, vitae nisi, numquam, ex laboriosam placeat reiciendis suscipit veniam!",
+    desc: "Coming soon...",
     price: {
       M: 20000,
       L: 25000
@@ -66,7 +66,7 @@ export const productPromote = [
     image: placeholderDrink,
     coverImage: yellowDrinkCover,
     color: "#f7d02d",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, vel dolorem qui illum corporis mollitia iste hic? Enim ullam eligendi pariatur, vitae nisi, numquam, ex laboriosam placeat reiciendis suscipit veniam!",
+    desc: "Coming soon...",
     price: {
       M: 20000,
       L: 25000
@@ -79,7 +79,7 @@ export const productPromote = [
     image: placeholderDrink,
     coverImage: purpleDrinkCover,
     color: "#b547eb",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, vel dolorem qui illum corporis mollitia iste hic? Enim ullam eligendi pariatur, vitae nisi, numquam, ex laboriosam placeat reiciendis suscipit veniam!",
+    desc: "Coming soon...",
     price: {
       M: 20000,
       L: 25000
@@ -92,7 +92,7 @@ export const productPromote = [
     image: placeholderDrink,
     coverImage: blueDrinkCover,
     color: "#40a1d0",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, vel dolorem qui illum corporis mollitia iste hic? Enim ullam eligendi pariatur, vitae nisi, numquam, ex laboriosam placeat reiciendis suscipit veniam!",
+    desc: "Coming soon...",
     price: {
       M: 20000,
       L: 25000
@@ -105,7 +105,7 @@ export const productPromote = [
     image: placeholderDrink,
     coverImage: yellowDrinkCover,
     color: "#f7d02d",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, vel dolorem qui illum corporis mollitia iste hic? Enim ullam eligendi pariatur, vitae nisi, numquam, ex laboriosam placeat reiciendis suscipit veniam!",
+    desc: "Coming soon...",
     price: {
       M: 20000,
       L: 25000
@@ -118,7 +118,7 @@ export const productPromote = [
     image: placeholderDrink,
     coverImage: purpleDrinkCover,
     color: "#b547eb",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, vel dolorem qui illum corporis mollitia iste hic? Enim ullam eligendi pariatur, vitae nisi, numquam, ex laboriosam placeat reiciendis suscipit veniam!",
+    desc: "Coming soon...",
     price: {
       M: 20000,
       L: 25000

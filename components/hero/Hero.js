@@ -6,10 +6,10 @@ function Hero() {
       <div className={` ${heroStyles.backgroundDimmer}`}>
         <div className={`container ${heroStyles.sectionContainer}`}>
           <div className={heroStyles.heroTitleWrapper}>
-            <h1 className={heroStyles.h1Text}>An urban milktea inspired by Taiwan</h1>
+            <h1 className={heroStyles.h1Text}>Khaoxin - Tiệm trà sữa mang âm hưởng Đài Loan</h1>
           </div>
           <div className={heroStyles.heroTextWrapper}>
-            <p>Taipei is the city with the largest number of Take Away milktea shops in the world and Taiwan has been emerging on the world stage of specialty milkteas. High quality, perfectionism, minimalism, quy trình quản lý, làm việc cũng như cách thức chế biến theo chuẩn Đài Loan are some of the characteristics that inspired the creation of Khaoxin.</p>
+            <p>Đài Loan là thành phố nổi tiếng với số lượng cửa hàng trà sữa takeaway nhiều nhất trên thế giới. Chất lượng cao, phong cách tối giản, quy trình quản lý, cách làm việc chuyên nghiệp cũng như cách thức chế biến theo tiêu chuẩn Đài Loan là những tố chất tạo nên hương vị đậm đà của ly trà sữa Khaoxin.</p>
           </div>
         </div>
       </div>
