@@ -18,7 +18,7 @@ function Item({ product }) {
         <strong className={itemStyles.itemName}>{product.name}</strong>
       </div>
       <div>
-        {product.price.M / 1000} | {product.price.L / 1000}
+        {product.price.M / 1000} {product.price.L ? `| ${product.price.L / 1000}` : ""}
       </div>
     </BotToTopFade>
   )

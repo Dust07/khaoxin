@@ -6,13 +6,16 @@ import openingPromo from "../../public/assets/PromoBanner/openingBanner.jpg"
 import carouselStyles from "./Carousel.module.scss"
 
 function PromotionCarousel() {
+  const redirectToReview = () => {
+    window.open('https://forms.gle/XFK7jZwTe1ob2Vsq8');
+  }
   return (
     <section className={carouselStyles.promotionSection}>
       <div className={carouselStyles.promotionContainer}>
         <div>
           <Image src={openingPromo} height={700} alt="promotion2" />
         </div>
-        <div>
+        <div onClick={() => redirectToReview}>
           <Image src={reviewPromo} height={700} alt="promotion1" />
         </div>
       </div>
