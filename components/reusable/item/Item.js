@@ -1,17 +1,19 @@
 import Image from "next/image"
 import BotToTopFade from "../../animated_component/BotToTopFade"
 import HoverClick from "../../animated_component/HoverClick"
-import PriceTag from "./component/PriceTag"
 import itemStyles from "./Item.module.scss"
 
 function Item({ product }) {
+  const handleClick = () => {
+    window.open("https://order.ipos.vn/menu?pos_parent=BRAND-CVAI&pos_id=60437&source=FB_MESSAGE")
+  }
   return (
     <BotToTopFade name={product.name} className={itemStyles.itemContainer}>
       <div className={itemStyles.itemUpperInfo}>
         <div className={itemStyles.imageContainer}>
           <div className={itemStyles.productImage}>
             <HoverClick>
-              <Image src={product.image} alt={product.name} />
+              <Image src={product.image} alt={product.name} onClick={() => handleClick()} />
             </HoverClick>
           </div>
         </div>

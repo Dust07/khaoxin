@@ -35,7 +35,7 @@ export const productPromote = [
   },
   {
     id: 2,
-    name: "Purple Drink",
+    name: "Khaoxin upcoming drink...",
     shadowText: "Giải khát đã mát, uống phát là fat",
     image: placeholderDrink,
     coverImage: purpleDrinkCover,
@@ -48,7 +48,7 @@ export const productPromote = [
   },
   {
     id: 3,
-    name: "Blue Drink 2",
+    name: "Khaoxin upcoming drink...",
     shadowText: "Freshen your day with a cup of",
     image: placeholderDrink,
     coverImage: blueDrinkCover,
@@ -61,7 +61,7 @@ export const productPromote = [
   },
   {
     id: 4,
-    name: "Yellow Drink 2",
+    name: "Khaoxin upcoming drink...",
     shadowText: "Màu vàng khiến chàng xỉu ngang",
     image: placeholderDrink,
     coverImage: yellowDrinkCover,
@@ -74,7 +74,7 @@ export const productPromote = [
   },
   {
     id: 5,
-    name: "Purple Drink 2",
+    name: "Khaoxin upcoming drink...",
     shadowText: "Giải khát đã mát, uống phát là fat",
     image: placeholderDrink,
     coverImage: purpleDrinkCover,
@@ -87,7 +87,7 @@ export const productPromote = [
   },
   {
     id: 6,
-    name: "Blue Drink 3",
+    name: "Khaoxin upcoming drink...",
     shadowText: "Freshen your day with a cup of",
     image: placeholderDrink,
     coverImage: blueDrinkCover,
@@ -100,7 +100,7 @@ export const productPromote = [
   },
   {
     id: 7,
-    name: "Yellow Drink 3",
+    name: "Khaoxin upcoming drink...",
     shadowText: "Màu vàng khiến chàng xỉu ngang",
     image: placeholderDrink,
     coverImage: yellowDrinkCover,
@@ -113,7 +113,7 @@ export const productPromote = [
   },
   {
     id: 8,
-    name: "Purple Drink 3",
+    name: "Khaoxin upcoming drink...",
     shadowText: "Giải khát đã mát, uống phát là fat",
     image: placeholderDrink,
     coverImage: purpleDrinkCover,

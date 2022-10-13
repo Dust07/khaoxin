@@ -12,12 +12,13 @@ function PromotionCarousel() {
   return (
     <section className={carouselStyles.promotionSection}>
       <div className={carouselStyles.promotionContainer}>
+        <div className={carouselStyles.reviewImage}>
+          <Image src={reviewPromo} height={700} alt="promotion1" onClick={() => redirectToReview()} />
+        </div>
         <div>
           <Image src={openingPromo} height={700} alt="promotion2" />
         </div>
-        <div onClick={() => redirectToReview}>
-          <Image src={reviewPromo} height={700} alt="promotion1" />
-        </div>
+
       </div>
       <div className={carouselStyles.carouselContainer}>
         <Carousel

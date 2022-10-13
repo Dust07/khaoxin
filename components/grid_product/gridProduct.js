@@ -13,8 +13,8 @@ function GridProduct() {
   return (
     <section className={gridStyles.gridProduct}>
       <div className={`container ${gridStyles.sectionTitle}`}>
-        <h2 className={gridStyles.h2Text}>PLACEHOLDER TITLE</h2>
-        <p className={gridStyles.descText}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequatur fuga hic. Minima repellat, ex velit fuga, ducimus nesciunt alias, sed numquam error rerum sapiente voluptatum repellendus quos doloremque exercitationem.</p>
+        <h2 className={gridStyles.h2Text}>Khaoxin - Make Your Day</h2>
+        <p className={gridStyles.descText}>Hãy để Khaoxin giúp bạn quên đi những âu lo muộn phiền trong cuộc sống bằng một ly trà sữa Đậm đà hương vị, Thơm tình yêu thương nhé!</p>
       </div>
       <div className={`container ${gridStyles.gridSectionWrapper}`} >
         <GridSelector productPromote={productPromote} handleSelectDrink={handleSelectDrink} />

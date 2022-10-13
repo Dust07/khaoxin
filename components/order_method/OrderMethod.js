@@ -16,8 +16,13 @@ function OrderMethod() {
 
           <div className={`col ${orderStyles.textSection}`}>
             <div className={orderStyles.textContainer}>
-              <h2 className={orderStyles.h2Text}>ORDER ONLINE</h2>
-              <p className={orderStyles.descText}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloremque repellat amet eveniet nobis! Accusamus autem cupiditate alias. Tempore numquam natus sapiente quos aut! Rerum cupiditate earum officiis recusandae qui.</p>
+              <h2 className={orderStyles.h2Text}>ĐẶT HÀNG </h2>
+              <p className={orderStyles.descText}>Không cần đi đâu xa, hãy để chúng mình tiếp thêm năng lượng cho bạn bằng những ly trà sữa Khaoxin.</p>
+              <ul>
+                <li className={orderStyles.descText}>- Freeship nếu bạn ở gần khu vực của chúng mình</li>
+                <li className={orderStyles.descText}>- Giao nước tốc độ, đảm bảo chất lượng</li>
+                <li className={orderStyles.descText}>- Nhân viên giao nước nhiệt tình, dễ thương</li>
+              </ul>
             </div>
 
             <WebOrderBtn />
@@ -25,11 +30,11 @@ function OrderMethod() {
         </div>
       </div>
 
-      <div className={orderStyles.thirdPartyWrapper}>
+      {/* <div className={orderStyles.thirdPartyWrapper}>
         {thirdPartyList.map((item) => {
           return <ThirdPartyItem key={item.id} item={item} />
         })}
-      </div>
+      </div> */}
     </section >
   )
 }
