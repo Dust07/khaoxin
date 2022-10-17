@@ -8,8 +8,8 @@ export const productList = [
     category: 2,
     name: "Trà sữa Đài Loan",
     price: {
-      "M": 20000,
-      "L": 25000
+      "M": 17000,
+      "L": 20000
     },
     discount: {
       active: false,
@@ -24,8 +24,8 @@ export const productList = [
     category: 2,
     name: "Oolong sữa Khaoxin",
     price: {
-      "M": 30000,
-      "L": 35000
+      "M": 19000,
+      "L": 22000
     },
     discount: {
       active: false,
@@ -40,8 +40,8 @@ export const productList = [
     category: 3,
     name: "Trà đào cam sả",
     price: {
-      "M": 10000,
-      "L": 15000
+      "M": 35000,
+      "L": null
     },
     discount: {
       active: false,
@@ -56,8 +56,8 @@ export const productList = [
     category: 3,
     name: "Trà ổi hồng",
     price: {
-      "M": 20000,
-      "L": 25000
+      "M": 35000,
+      "L": null
     },
     discount: {
       active: false,
@@ -72,8 +72,8 @@ export const productList = [
     category: 3,
     name: "Trà vải hoa hồng",
     price: {
-      "M": 10000,
-      "L": 15000
+      "M": 35000,
+      "L": null
     },
     discount: {
       active: false,
@@ -88,8 +88,8 @@ export const productList = [
     category: 3,
     name: "Trà bưởi đỏ Yuzu",
     price: {
-      "M": 20000,
-      "L": 25000
+      "M": 35000,
+      "L": null
     },
     discount: {
       active: false,
@@ -104,8 +104,8 @@ export const productList = [
     category: 3,
     name: "Trà dâu",
     price: {
-      "M": 10000,
-      "L": 15000
+      "M": 35000,
+      "L": null
     },
     discount: {
       active: false,
@@ -120,8 +120,8 @@ export const productList = [
     category: 4,
     name: "Sữa tươi TC Đường đen",
     price: {
-      "M": 20000,
-      "L": 25000
+      "M": 30000,
+      "L": 35000
     },
     discount: {
       active: false,
@@ -134,10 +134,10 @@ export const productList = [
   {
     id: 9,
     category: 5,
-    name: "Oolong Kem sữa",
+    name: "Trà Oolong Kem sữa",
     price: {
-      "M": 20000,
-      "L": 25000
+      "M": 26000,
+      "L": 29000
     },
     discount: {
       active: false,
@@ -184,9 +184,9 @@ export const productList = [
   {
     id: 12,
     category: 6,
-    name: "Milk foam",
+    name: "Lớp kem sữa",
     price: {
-      "M": 7000,
+      "M": 10000,
       "L": null
     },
     discount: {
@@ -201,9 +201,9 @@ export const productList = [
   {
     id: 13,
     category: 6,
-    name: "Milk foam Cheese",
+    name: "Lớp kem sữa phô mai",
     price: {
-      "M": 7000,
+      "M": 12000,
       "L": null
     },
     discount: {
@@ -250,11 +250,11 @@ export const productList = [
   },
   {
     id: 16,
-    category: 6,
-    name: "Hạt sen",
+    category: 2,
+    name: "Trà sữa Oolong kem sữa",
     price: {
-      "M": 7000,
-      "L": null
+      "M": 29000,
+      "L": 32000
     },
     discount: {
       active: false,
@@ -269,8 +269,8 @@ export const productList = [
     category: 1,
     name: "Khaoxin's Taroro",
     price: {
-      "M": 20000,
-      "L": 25000
+      "M": 35000,
+      "L": null
     },
     discount: {
       active: false,
@@ -285,8 +285,8 @@ export const productList = [
     category: 1,
     name: "Khaoxin's Chocolove",
     price: {
-      "M": 20000,
-      "L": 25000
+      "M": 35000,
+      "L": null
     },
     discount: {
       active: false,
@@ -301,8 +301,8 @@ export const productList = [
     category: 1,
     name: "Khaoxin's Strawberry Cheesecake",
     price: {
-      "M": 20000,
-      "L": 25000
+      "M": 39000,
+      "L": null
     },
     discount: {
       active: false,
@@ -346,11 +346,11 @@ export const productList = [
   },
   {
     id: 21,
-    category: 2,
+    category: 3,
     name: "Trà Oolong mật ong",
     price: {
-      "M": 20000,
-      "L": 25000
+      "M": 25000,
+      "L": null
     },
     discount: {
       active: false,
@@ -365,8 +365,8 @@ export const productList = [
     category: 3,
     name: "Trà chanh hoa đậu biếc",
     price: {
-      "M": 20000,
-      "L": 25000
+      "M": 29000,
+      "L": null
     },
     discount: {
       active: false,
@@ -381,8 +381,8 @@ export const productList = [
     category: 4,
     name: "Oolong Latte",
     price: {
-      "M": 20000,
-      "L": 25000
+      "M": 26000,
+      "L": 29000
     },
     discount: {
       active: false,
@@ -394,11 +394,11 @@ export const productList = [
   },
   {
     id: 24,
-    category: 4,
-    name: "Choco Latte",
+    category: 2,
+    name: "Trà sữa Oolong kem sữa phô mai",
     price: {
-      "M": 20000,
-      "L": 25000
+      "M": 31000,
+      "L": 34000
     },
     discount: {
       active: false,
@@ -411,10 +411,10 @@ export const productList = [
   {
     id: 25,
     category: 5,
-    name: "Oolong Kem sữa Phô mai",
+    name: "Trà Oolong Kem sữa Phô mai",
     price: {
-      "M": 20000,
-      "L": 25000
+      "M": 28000,
+      "L": 31000
     },
     discount: {
       active: false,
@@ -429,8 +429,8 @@ export const productList = [
     category: 5,
     name: "Trà sen vàng",
     price: {
-      "M": 20000,
-      "L": 25000
+      "M": 35000,
+      "L": null
     },
     discount: {
       active: false,
@@ -445,7 +445,7 @@ export const productList = [
     category: 6,
     name: "Đào",
     price: {
-      "M": 7000,
+      "M": 10000,
       "L": null
     },
     discount: {
@@ -461,7 +461,7 @@ export const productList = [
     category: 6,
     name: "Vải",
     price: {
-      "M": 7000,
+      "M": 10000,
       "L": null
     },
     discount: {
@@ -475,25 +475,9 @@ export const productList = [
   {
     id: 29,
     category: 6,
-    name: "Dâu",
+    name: "Ổi",
     price: {
-      "M": 7000,
-      "L": null
-    },
-    discount: {
-      active: false,
-      amount: null
-    },
-    image: placeholderDrink,
-    desc: "Description",
-    isAvailable: true,
-  },
-  {
-    id: 30,
-    category: 6,
-    name: "Bưởi",
-    price: {
-      "M": 7000,
+      "M": 10000,
       "L": null
     },
     discount: {

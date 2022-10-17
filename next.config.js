@@ -12,6 +12,15 @@ const nextConfig = {
   },
   reactStrictMode: true,
   swcMinify: true,
+  async redirect() {
+    return [
+      {
+        source: "/",
+        destination: "/",
+        permanent: true,
+      }
+    ]
+  }
 }
 
 module.exports = withPWA(nextConfig)
