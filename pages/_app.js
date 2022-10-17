@@ -3,15 +3,18 @@ import '../styles/globals.scss'
 
 import { useEffect } from 'react';
 import Layout from '../components/layout/Layout';
+import ErrorBoundary from './error';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap");
   }, [])
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <ErrorBoundary>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ErrorBoundary>
   )
 }
 
