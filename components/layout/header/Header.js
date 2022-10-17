@@ -50,7 +50,7 @@ function Header() {
 
   useEffect(() => {
     const pageShowing = navItem.find(item => item.url === router.asPath)
-    setCurrentPage(pageShowing.id)
+    if (pageShowing) setCurrentPage(pageShowing.id)
   }, [router.asPath])
 
   useEffect(() => {
